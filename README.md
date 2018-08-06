@@ -2,7 +2,7 @@
 
 ## Publication Info
 
-- Author: Claudio Fantinuoli
+- Editor: Claudio Fantinuoli
 - Publication Date: not yet published
 - Series: Translation and Multilingual Natural Language Processing 
 - Volume: 
@@ -18,7 +18,7 @@
 
 ## License
 
-Copyright: (c) 2018, Sonja Müller.
+Copyright: (c) 2018, the authors.
 
 All data, code and documentation in this repository is published under the
 [Creative Commons Attribution 4.0 Licence](http://creativecommons.org/licenses/by/4.0/)
