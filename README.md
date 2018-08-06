@@ -2,7 +2,7 @@
 
 ## Publication Info
 
-- Author: Claudio Fantinuoli
+- Editor: Claudio Fantinuoli
 - Publication Date: not yet published
 - Series: Translation and Multilingual Natural Language Processing 
 - Volume: 
