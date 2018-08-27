@@ -196,8 +196,43 @@ Of each group of stimuli, 6 are placed at the end of the sentence and 6 in the m
 Of the 6 terms placed at the end of the sentence, 3 should require a query in the glossary, because they are less frequent and thus probably unknown to the participants, and 3 should not.\footnote{This classification was based on the frequency of the terms as per the 2015 news corpus, the 2012 web corpus (UK) and the 2016 Wikipedia corpus for the English language (Projekt Deutscher Wortschatz, \url{http://wortschatz.uni-leipzig.de}).} The same is true for the terms placed in the middle of the sentence. Half of the stimuli in each speech should therefore require a query and half should not. This variable was introduced because we want to verify whether \textsc{CAI} tools, which are usually deemed to be user-friendlier and to take up fewer cognitive resources, allow participants to perform more queries without leading to a higher number of errors or omissions. \figref{fig:prandi:8} sums up the features of the stimuli and their distribution in each speech. For each speech, the stimuli can thus be classified according to their features, for future analysis. \tabref{tab:prandi:1} shows an example of this classification for the stimuli in speech nr. 1.
 
 \begin{figure}
+\footnotesize
 		%%please move the includegraphics inside the {figure} environment
 		%%\includegraphics[width=\textwidth]{Ch2-img16.png}
+\begin{forest}for tree={grow=east,edge=-{Stealth[]},parent anchor=east,anchor=west}
+[36 terms\slash speech
+    [12 1-grams
+        [6 end sentence,tier=sub
+            [3 querying needed,tier=word]
+            [3 querying not needed,tier=word]
+        ]
+        [6 middle sentence,tier=sub
+            [3 querying needed,tier=word]
+            [3 querying not needed,tier=word]
+        ]
+    ]
+    [12 2-grams
+        [6 end sentence,tier=sub
+            [3 querying needed,tier=word]
+            [3 querying not needed,tier=word]
+        ]
+        [6 middle sentence,tier=sub
+            [3 querying needed,tier=word]
+            [3 querying not needed,tier=word]
+        ]
+    ]    
+    [12 3-grams
+        [6 end sentence,tier=sub
+            [3 querying needed,tier=word]
+            [3 querying not needed,tier=word]
+        ]
+        [6 middle sentence,tier=sub
+            [3 querying needed,tier=word]
+            [3 querying not needed,tier=word]
+        ]
+    ]
+]
+\end{forest}
 \caption{Features and distribution of the stimuli used for data collection\label{fig:prandi:8}}
 \end{figure}
 
