@@ -122,6 +122,37 @@ The numbers expressed in the experimental speeches were balanced over four categ
 \begin{figure}
 	%%please move the includegraphics inside the {figure} environment
 	%%\includegraphics[width=\textwidth]{Ch1-img5}
+\begin{tikzpicture}
+            \begin{axis}[
+                    ybar,
+                    ylabel={\%},
+                    xtick=data,
+                    axis lines*=left,
+                    ymin=0,
+                    scaled y ticks=false,
+                    colormap/Greys-5,
+                    cycle list/Greys-5,
+                    legend pos=north west,
+                    xticklabels={date,decimal,complex,simple},
+                    ticklabel style={font=\footnotesize\scshape},
+                    legend style={font=\footnotesize,at={(0.5,-0.25)},anchor=north},
+                    legend columns=-1,
+                    width=\textwidth,
+                    height=5cm,
+                    enlarge x limits={0.1},
+                    nodes near coords,
+                    nodes near coords style={text=black,font=\footnotesize},
+                    ]
+                \addplot+[
+                     fill=Greys-E,draw=none
+                    ] coordinates {(0,89) (1,90) (2,82) (3,85)};
+                \addlegendentryexpanded{with support}              
+                \addplot+[                                     
+                     fill=Greys-I,draw=none
+                    ] coordinates {(0,73) (1,51) (2,32) (3,70)};
+                \addlegendentryexpanded{without support}                                                                    
+            \end{axis}                                                                           
+\end{tikzpicture}
 \caption{Average accuracy per number type in both experimental conditions\label{fig:01:2}}
 \end{figure}
 
@@ -136,6 +167,46 @@ A total of 228 errors was observed in the experiment. \figref{fig:key:3} present
 \begin{figure}
 	%%please move the includegraphics inside the {figure} environment
 	%%\includegraphics[width=\textwidth]{Ch1-img6}
+\begin{tikzpicture}
+            \begin{axis}[
+                    ybar,
+                    ylabel={\%},
+                    xtick=data,
+                    axis lines*=left,
+                    ymin=0,
+                    trim axis left,
+                    trim axis right,
+                    scaled y ticks=false,
+                    colormap/Greys-5,
+                    cycle list/Greys-5,                    xticklabels={other,phonological,syntactic,transposition,lexical,approximation,omission},
+                    ticklabel style={font=\footnotesize\scshape},
+                    x tick label style={rotate=45,anchor=east,xshift=-.5cm,yshift=\baselineskip,tickwidth=0pt},
+                    legend style={font=\footnotesize,at={(0.5,-0.55)},anchor=north},
+                    legend columns=-1,
+                    width=\textwidth,
+                    height=5cm,
+                    enlarge x limits={upper,abs=2cm},
+                    ymax=30,
+                    restrict y to domain*=0:35,
+                    visualization depends on=rawy\as\rawy, % Save the unclipped values
+                        after end axis/.code={ % Draw line indicating break
+                            \draw [ultra thick, white, decoration={snake, amplitude=1pt}, decorate] (rel axis cs:0,1.05) -- (rel axis cs:1,1.05);
+                         },
+                    nodes near coords={\pgfmathprintnumber{\rawy}% Print unclipped values
+                    },
+                    nodes near coords style={text=black,font=\footnotesize},
+                    clip=false
+                    ]
+                \addplot+[
+                     fill=Greys-E,draw=none,xshift=-1cm
+                    ] coordinates {(0,1) (1,1) (2,4) (3,0) (4,5) (5,4) (6,39)};
+                \addlegendentryexpanded{with support}              
+                \addplot+[                                     
+                     fill=Greys-I,draw=none,xshift=-1cm
+                    ] coordinates {(0,5) (1,2) (2,3) (3,4) (4,15) (5,39) (6,106)};
+                \addlegendentryexpanded{without support}                                                                    
+            \end{axis}                                                                           
+\end{tikzpicture}	
 \caption{Error count per type in both experimental conditions\label{fig:01:3}}
 \end{figure}
 
