@@ -258,7 +258,38 @@ Another goal of our research is to verify whether the use of a \textsc{CAI} tool
 As previously stated, half of the stimuli were classified as needing a glossary query. In order to verify whether this was true, the sample was checked for the total number of terms searched, the number of terms searched that were classified as needing to be searched in the glossary (``QN'') and the number of terms searched that we did not expect to require a query in the glossary (``NO QN''). 
 
 \begin{figure}
-\caption{search behavior per stimuli category}
+\begin{tikzpicture}
+            \begin{axis}[
+                    ybar,
+                    ylabel={\%},
+                    xtick=data,
+                    axis lines*=left,
+                    ymin=0,
+                    scaled y ticks=false,
+                    colormap/Greys-5,
+                    cycle list/Greys-5,
+                    legend pos=north west,
+                    xticklabels={cai-ps1-01,cai-ps1-02,cai-ps1-03,cai-ps1-04,cai-ps1-05,cai-ps1-06},
+                    ticklabel style={font=\footnotesize\scshape},
+                    legend style={font=\footnotesize,at={(0.5,-0.25)},anchor=north},
+                    legend columns=-1,
+                    width=\textwidth,
+                    height=5cm,
+                    enlarge x limits={0.1},
+                    nodes near coords,
+                    nodes near coords style={text=black,font=\footnotesize},
+                    ]
+                \addplot+[
+                     fill=Greys-E,draw=none
+                    ] coordinates {(0,63) (1,63) (2,70) (3,50) (4,76) (5,31)};
+                \addlegendentryexpanded{Terms searched, QN (\%\slash54)}              
+                \addplot+[                                     
+                     fill=Greys-I,draw=none
+                    ] coordinates {(0,24) (1,24) (2,26) (3,22) (4,22) (5,0)};
+                \addlegendentryexpanded{Terms searched, NO QN (\%/54)}                                                                    
+            \end{axis}                                                                           
+\end{tikzpicture}
+\caption{Search behavior per stimuli category}
 \label{fig:prandi:9}
 \end{figure}
 
@@ -269,7 +300,39 @@ We also verified which terms classified as needing a glossary query had not been
 If we take into consideration the position of the stimuli in the target sentences, something interesting emerges from initial data analysis, which deserves further exploration in a bigger sample, especially in correlation with pupillometry measures. While the difference is, for some test subjects, more evident than for others, the stimuli placed at the end of the sentence seem to elicit more queries than the stimuli placed in the middle of the sentence (see \figref{fig:prandi:10}). This might be explained with the fact that, when a term is placed at the end of the sentence, anticipation might lead the participants to prepare themselves to adopt a coping mechanism, such as a glossary query. The ``preparation'' could also result in a sentence structure that favors a glossary query, requiring less restructuring or making it difficult to omit the term completely. This could, however, result in higher cognitive load, because if the query is not successful, more cognitive resources will be needed to adopt a different strategy, possibly affecting the rendition of the following sentences. A stimulus placed in the middle of the sentence could prompt the interpreter to immediately choose a strategy different than consulting the glossary available, such as generalization or the use of a synonym. While this may lead to a less precise rendition of the original, it may also come with lower cognitive load experienced.
 
 \begin{figure}
-\caption{stimulus position and percentage of terms searched. Percentage expressed on a total of 54 terms per category.}
+\begin{tikzpicture}
+            \begin{axis}[
+                    ybar stacked,
+                    ylabel={\%},
+                    xtick=data,
+                    axis lines*=left,
+                    ymin=0,
+                    scaled y ticks=false,
+                    colormap/Greys-5,
+                    cycle list/Greys-5,
+                    legend pos=north west,
+                    xticklabels={cai-ps1-01,cai-ps1-02,cai-ps1-03,cai-ps1-04,cai-ps1-05,cai-ps1-06},
+                    ticklabel style={font=\footnotesize\scshape},
+                    legend style={font=\footnotesize,at={(0.5,-0.25)},anchor=north},
+                    legend columns=-1,
+                    width=\textwidth,
+                    height=5cm,
+                    bar width=.75cm,
+                    enlarge x limits={0.1},
+                    nodes near coords,
+                    nodes near coords style={text=black,font=\footnotesize,xshift=10pt,yshift=-1ex,anchor=west},
+                    ]
+                \addplot+[
+                     fill=Greys-E,draw=none
+                    ] coordinates {(0,48) (1,50) (2,54) (3,44) (4,56) (5,20)};
+                \addlegendentryexpanded{End}              
+                \addplot+[                                     
+                     fill=Greys-I,draw=none
+                    ] coordinates {(0,39) (1,37) (2,43) (3,28) (4,43) (5,11)};
+                \addlegendentryexpanded{Middle}                                                                    
+            \end{axis}                                                                           
+\end{tikzpicture}
+\caption{Stimulus position and percentage of terms searched. Percentage expressed on a total of 54 terms per category.}
 \label{fig:prandi:10}
 \end{figure}
 
@@ -278,6 +341,41 @@ Even though the stimuli classified as requiring a query were equally distributed
 If we take into consideration the morphological complexity\textstyleannotationreference{ -} \textstyleannotationreference{here defined as the number of elements making up the terms}\footnote{For instance, a trigram is considered morphologically more complex than a bigram.}\textstyleannotationreference{ -} we notice that unigrams are searched more often than bigrams and trigrams \textstyleannotationreference{in the case of the} stimuli classified as not needing a query (see \figref{fig:prandi:11}). This might be explained with the fact that, when faced with a bigram or a trigram, participants need to decide which element of the term should be looked up, which requires additional cognitive resources. For this reason, they might choose to directly adopt a different strategy. A unigram does not require them to make this decision, and so the act of querying the glossary is more straightforward. No clear trend can be identified for the stimuli that should require a query.
 
 \begin{figure}
+\begin{tikzpicture}
+            \begin{axis}[
+                    ybar,
+                    ylabel={\%},
+                    xtick=data,
+                    axis lines*=left,
+                    ymin=0,
+                    scaled y ticks=false,
+                    colormap/Greys-5,
+                    cycle list/Greys-5,
+                    legend pos=north west,
+                    xticklabels={cai-ps1-01,cai-ps1-02,cai-ps1-03,cai-ps1-04,cai-ps1-05,cai-ps1-06},
+                    ticklabel style={font=\footnotesize\scshape},
+                    legend style={font=\footnotesize,at={(0.5,-0.25)},anchor=north},
+                    legend columns=-1,
+                    width=\textwidth,
+                    height=5cm,
+                    enlarge x limits={0.1},
+                    nodes near coords,
+                    nodes near coords style={text=black,font=\footnotesize},
+                    ]
+                \addplot+[
+                     fill=Greys-E,draw=none
+                    ] coordinates {(0,28) (1,44) (2,33) (3,28) (4,33) (5,0)};
+                \addlegendentryexpanded{unigrams, NO QN}              
+                \addplot+[                                     
+                     fill=Greys-G,draw=none
+                    ] coordinates {(0,22) (1,11) (2,22) (3,22) (4,17) (5,0)};
+                \addlegendentryexpanded{bigrams, NO QN}                                                       
+                \addplot+[                                     
+                     fill=Greys-K,draw=none
+                    ] coordinates {(0,22) (1,17) (2,22) (3,17) (4,17) (5,0)};
+                \addlegendentryexpanded{trigrams,NO QN}
+            \end{axis}                                                                           
+\end{tikzpicture}
 \caption{morphological complexity and percentage of terms searched (terms not needing a query). N=18/category}
 \label{fig:prandi:11}
 \end{figure}
@@ -298,17 +396,122 @@ This classification certainly presents some degree of subjectivity, but it is no
 
 Figures 12, 13 and 14 sum up the degree of terminological precision achieved when performing a glossary query with Word, Excel and InterpretBank glossaries. 
 
-\begin{figure}
+\begin{figure}[p]
+\begin{tikzpicture}
+            \begin{axis}[
+                    ybar,
+                    ylabel={\%},
+                    xtick=data,
+                    axis lines*=left,
+                    ymin=0,
+                    scaled y ticks=false,
+                    colormap/Greys-5,
+                    cycle list/Greys-5,
+                    xticklabels={cai-ps1-01,cai-ps1-02,cai-ps1-03,cai-ps1-04,cai-ps1-05,cai-ps1-06},
+                    ticklabel style={font=\footnotesize\scshape},
+                    legend style={font=\footnotesize,anchor=north},
+                    legend pos=outer north east,
+                    legend columns=1,
+                    width=.9\textwidth,
+                    height=5cm,
+                    enlarge x limits={0.1},
+                    nodes near coords,
+                    nodes near coords style={text=black,font=\footnotesize},
+                    ]
+                \addplot+[
+                     fill=Greys-E,draw=none
+                    ] coordinates {(0,69) (1,43) (2,80) (3,67) (4,56) (5,100)};
+                \addlegendentryexpanded{P2}              
+                \addplot+[                                     
+                     fill=Greys-G,draw=none
+                    ] coordinates {(0,0) (1,14) (2,13) (3,0) (4,19) (5,0)};
+                \addlegendentryexpanded{P1}                                                       
+                \addplot+[                                     
+                     fill=Greys-K,draw=none
+                    ] coordinates {(0,31) (1,43) (2,7) (3,33) (4,25) (5,0)};
+                \addlegendentryexpanded{P0}
+            \end{axis}                                                                           
+\end{tikzpicture}
 \caption{Precision of renditions with Word}
 \label{fig:prandi:12}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[p]
+\begin{tikzpicture}
+            \begin{axis}[
+                    ybar,
+                    ylabel={\%},
+                    xtick=data,
+                    axis lines*=left,
+                    ymin=0,
+                    scaled y ticks=false,
+                    colormap/Greys-5,
+                    cycle list/Greys-5,
+                    xticklabels={cai-ps1-01,cai-ps1-02,cai-ps1-03,cai-ps1-04,cai-ps1-05,cai-ps1-06},
+                    ticklabel style={font=\footnotesize\scshape},
+                    legend style={font=\footnotesize,anchor=north},
+                    legend pos=outer north east,
+                    legend columns=1,
+                    width=.9\textwidth,
+                    height=5cm,
+                    enlarge x limits={0.1},
+                    nodes near coords,
+                    nodes near coords style={text=black,font=\footnotesize},
+                    ]
+                \addplot+[
+                     fill=Greys-E,draw=none
+                    ] coordinates {(0,73) (1,40) (2,70) (3,44) (4,82) (5,63)};
+                \addlegendentryexpanded{P2}              
+                \addplot+[                                     
+                     fill=Greys-G,draw=none
+                    ] coordinates {(0,18) (1,13) (2,15) (3,22) (4,0) (5,13)};
+                \addlegendentryexpanded{P1}                                                       
+                \addplot+[                                     
+                     fill=Greys-K,draw=none
+                    ] coordinates {(0,9) (1,47) (2,15) (3,33) (4,18) (5,25)};
+                \addlegendentryexpanded{P0}
+            \end{axis}                                                                           
+\end{tikzpicture}
 \caption{Precision of renditions with Excel}
 \label{fig:prandi:13}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[p]
+\begin{tikzpicture}
+            \begin{axis}[
+                    ybar,
+                    ylabel={\%},
+                    xtick=data,
+                    axis lines*=left,
+                    ymin=0,
+                    scaled y ticks=false,
+                    colormap/Greys-5,
+                    cycle list/Greys-5,
+                    xticklabels={cai-ps1-01,cai-ps1-02,cai-ps1-03,cai-ps1-04,cai-ps1-05,cai-ps1-06},
+                    ticklabel style={font=\footnotesize\scshape},
+                    legend style={font=\footnotesize,anchor=north},
+                    legend pos=outer north east,
+                    legend columns=1,
+                    width=.9\textwidth,
+                    height=5cm,
+                    enlarge x limits={0.1},
+                    nodes near coords,
+                    nodes near coords style={text=black,font=\footnotesize},
+                    ]
+                \addplot+[
+                     fill=Greys-E,draw=none
+                    ] coordinates {(0,85) (1,78) (2,69) (3,94) (4,89) (5,50)};
+                \addlegendentryexpanded{P2}              
+                \addplot+[                                     
+                     fill=Greys-G,draw=none
+                    ] coordinates {(0,0) (1,0) (2,13) (3,6) (4,6) (5,25)};
+                \addlegendentryexpanded{P1}                                                       
+                \addplot+[                                     
+                     fill=Greys-K,draw=none
+                    ] coordinates {(0,15) (1,22) (2,19) (3,0) (4,6) (5,25)};
+                \addlegendentryexpanded{P0}
+            \end{axis}                                                                           
+\end{tikzpicture}
 \caption{Precision of renditions with InterpretBank}
 \label{fig:prandi:14}
 \end{figure}
@@ -341,6 +544,36 @@ We conclude our analysis by looking at the strategies adopted, to establish whet
 \figref{fig:prandi:15} reports an overview of the strategies used by the test subjects for all tools and all stimuli. Data clearly show that, with one exception, a glossary query was the strategy most used by the test subjects. This can be easily explained by the fact that the test subjects had not prepared for the assignment. The second most used strategies are approximation, omission and world knowledge.
 
 \begin{figure}
+\begin{tikzpicture}[trim axis right,trim axis left]
+\pgfplotstableread{data/prandi15.csv}{\table}
+    \pgfplotstablegetcolsof{\table}
+    \pgfmathtruncatemacro\numberofcols{\pgfplotsretval-1}
+        \begin{axis}[
+                    ybar stacked,
+                    xtick=data,
+                    axis lines*=left,
+                    ymin=0,
+                    xticklabels from table={\table}{P},
+                    bar width=6mm,
+                    width=\textwidth,
+                    xticklabel style={rotate=90, anchor=east},
+                    ticklabel style={font=\footnotesize\scshape},
+                    enlarge x limits={0.05},
+                    cycle list name=langscicolorcycle,
+                    legend pos=outer north east,
+                    reverse legend,
+                    legend style={font=\footnotesize},
+                    legend cell align=left,
+                    ]
+            \foreach \i in {1,...,\numberofcols} {
+                \addplot+[
+                    /pgf/number format/read comma as period, fill
+                    ] table [x index={1},y index={\i},x expr=\coordindex] {\table};
+                \pgfplotstablegetcolumnnamebyindex{\i}\of{\table}\to{\colname} % Adding column headers to legend
+                \addlegendentryexpanded{\colname}
+            }   
+            \end{axis}    
+\end{tikzpicture}
 \caption{Overview of strategies used (all tools and stimuli)}
 \label{fig:prandi:15}
 \end{figure}
@@ -352,19 +585,110 @@ If we look at the strategies adopted when using different tools to look up terms
 Querying the glossary was the favorite strategy also when Excel (\figref{fig:prandi:17}) was used, in 4 cases out of 6, while the other two resorted, respectively, mainly to omission and paraphrase, and to world knowledge. There is not a clear preference as to the second most used strategy, while the third most used, in 4 cases out of 6, is world knowledge, followed by approximation and both omission and compression.
 
 \begin{figure}
-\caption{Strategies adopted - InterpretBank glossary}
+\begin{tikzpicture}[trim axis right,trim axis left]
+\pgfplotstableread{data/prandi16.csv}{\table}
+    \pgfplotstablegetcolsof{\table}
+    \pgfmathtruncatemacro\numberofcols{\pgfplotsretval-1}
+        \begin{axis}[
+                    ybar stacked,
+                    xtick=data,
+                    axis lines*=left,
+                    ymin=0,
+                    xticklabels from table={\table}{P},
+                    bar width=6mm,
+                    width=\textwidth,
+                    xticklabel style={rotate=90, anchor=east},
+                    ticklabel style={font=\footnotesize\scshape},
+                    enlarge x limits={0.05},
+                    cycle list name=langscicolorcycle,
+                    legend pos=outer north east,
+                    reverse legend,
+                    legend style={font=\footnotesize},
+                    legend cell align=left,
+                    ]
+            \foreach \i in {1,...,\numberofcols} {
+                \addplot+[
+                    /pgf/number format/read comma as period, fill
+                    ] table [x index={1},y index={\i},x expr=\coordindex] {\table};
+                \pgfplotstablegetcolumnnamebyindex{\i}\of{\table}\to{\colname} % Adding column headers to legend
+                \addlegendentryexpanded{\colname}
+            }   
+            \end{axis}    
+\end{tikzpicture}
+\caption{Strategies adopted -- InterpretBank glossary}
 \label{fig:prandi:16}
 \end{figure}
 
 In the third case, in which the test subjects could look up terms in a Word glossary (see \figref{fig:prandi:18}), a glossary query also seems to be the favorite strategy, while paraphrasing is the second most used strategy in the sample. The third most used strategy is omission.
 
 \begin{figure}
-\caption{Strategies adopted - Word glossary}
+\begin{tikzpicture}[trim axis right,trim axis left]
+\pgfplotstableread{data/prandi17.csv}{\table}
+    \pgfplotstablegetcolsof{\table}
+    \pgfmathtruncatemacro\numberofcols{\pgfplotsretval-1}
+        \begin{axis}[
+                    ybar stacked,
+                    xtick=data,
+                    axis lines*=left,
+                    ymin=0,
+                    xticklabels from table={\table}{P},
+                    bar width=6mm,
+                    width=\textwidth,
+                    xticklabel style={rotate=90, anchor=east},
+                    ticklabel style={font=\footnotesize\scshape},
+                    enlarge x limits={0.05},
+                    cycle list name=langscicolorcycle,
+                    legend pos=outer north east,
+                    reverse legend,
+                    legend style={font=\footnotesize},
+                    legend cell align=left,
+                    ]
+            \foreach \i in {1,...,\numberofcols} {
+                \addplot+[
+                    /pgf/number format/read comma as period, fill
+                    ] table [x index={1},y index={\i},x expr=\coordindex] {\table};
+                \pgfplotstablegetcolumnnamebyindex{\i}\of{\table}\to{\colname} % Adding column headers to legend
+                \addlegendentryexpanded{\colname}
+            }   
+            \end{axis}    
+\end{tikzpicture}
+\caption{Strategies adopted -- Word glossary}
 \label{fig:prandi:18}
 \end{figure}
 
 \begin{figure}
-\caption{Strategies adopted - Excel glossary}
+\begin{tikzpicture}[trim axis right,trim axis left]
+\pgfplotstableread{data/prandi18.csv}{\table}
+    \pgfplotstablegetcolsof{\table}
+    \pgfmathtruncatemacro\numberofcols{\pgfplotsretval-1}
+        \begin{axis}[
+                    ybar stacked,
+                    xtick=data,
+                    axis lines*=left,
+%                     nodes near coords,
+                    ymin=0,
+                    xticklabels from table={\table}{P},
+                    bar width=6mm,
+                    width=\textwidth,
+                    xticklabel style={rotate=90, anchor=east},
+                    ticklabel style={font=\footnotesize\scshape},
+                    enlarge x limits={0.05},
+                    cycle list name=langscicolorcycle,
+                    legend pos=outer north east,
+                    reverse legend,
+                    legend style={font=\footnotesize},
+                    legend cell align=left,
+                    ]
+            \foreach \i in {1,...,\numberofcols} {
+                \addplot+[
+                    /pgf/number format/read comma as period, fill
+                    ] table [x index={1},y index={\i},x expr=\coordindex] {\table};
+                \pgfplotstablegetcolumnnamebyindex{\i}\of{\table}\to{\colname} % Adding column headers to legend
+                \addlegendentryexpanded{\colname}
+            }   
+            \end{axis}    
+\end{tikzpicture}
+\caption{Strategies adopted -- Excel glossary}
 \label{fig:prandi:17}
 \end{figure}
 
