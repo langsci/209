@@ -196,6 +196,19 @@ As hypothesis testing was used to analyze the quantitative data obtained from th
 \begin{figure}
 	%%please move the includegraphics inside the {figure} environment
 	%%\includegraphics[width=\textwidth]{Ch3-img1.wmf}
+\begin{tikzpicture}
+\begin{axis}  [xtick={data},
+               xticklabels={pre,post},
+               ylabel={abs error},
+               ytick distance=0.5,
+               xlabel={time}
+              ]
+    \addplot+ [error bars/.cd,
+               y dir=both,y explicit,
+              ] coordinates {(1,1.4) +-(1.0000,1.0000) 
+                             (2,0.6) +-(1.0000,1.0000)};
+\end{axis}
+\end{tikzpicture}
 \caption{Means of absolute errors pre-experiment and post-experiment}
 \end{figure}
 
