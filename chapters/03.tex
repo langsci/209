@@ -331,68 +331,75 @@ The empirical study sought to obtain quantitative and qualitative data. The prim
 
 \section*{Addendum A: An example of the self-assessment grid}
 \label{03:addendum:A}
-\begin{tabularx}{\textwidth}{|XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|}
-\lsptoprule
+\renewcommand{\arraystretch}{2}
+\newlength{\tablewidth}\setlength{\tablewidth}{20cm}
+\newlength{\cellwidth}\setlength{\cellwidth}{0.033\tablewidth}
+\newlength{\rowwidth}\setlength{\rowwidth}{30\cellwidth}
+
+\resizebox{\textwidth}{!}{%
+\sffamily
+\begin{tabularx}{\rowwidth}{p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}p{\cellwidth}}
+% Looks awful, but works ¯\_(ツ)_/¯
+\hline
 \rowcolor{lsLightGray}
-\multicolumn{30}{p{\textwidth}}{\textbf{SELF-ASSESSMENT SHEET}}\\ \midrule
-\multicolumn{30}{p{\textwidth}}{\textbf{Debate on the State of the Nation Address}}\\
-\multicolumn{30}{p{\textwidth}}{\textbf{Duration: 6:35min}}\\\midrule
-\multicolumn{30}{p{\textwidth}}{Read through all the questions in this self-assessment sheet before you start with the playback of the recording. You are allowed to pause, rewind and make notes while listening to the recording.} \\\midrule
-\multicolumn{30}{p{\linewidth}}{PARTICIPANT CODE:}\\ \midrule
+\multicolumn{30}{|c|}{\textbf{\Large SELF-ASSESSMENT SHEET}}\\
+\multicolumn{30}{|X|}{\textbf{Debate on the State of the Nation Address}}\\
+\multicolumn{30}{|X|}{\textbf{Duration: 6:35min}}\\\hline
+\multicolumn{30}{|X|}{Read through all the questions in this self-assessment sheet before you start with the playback of the recording. You are allowed to pause, rewind and make notes while listening to the recording.} \\\hline
+\multicolumn{30}{|X|}{PARTICIPANT CODE:}\\ \hline
 
 \rowcolor{lsLightGray}
-\multicolumn{20}{p{0.67\textwidth}}{\textbf{1. ACCURACY / CONTENT OF MESSAGE:}} & \multicolumn{2}{p{0.067\textwidth}}{1} & \multicolumn{2}{p{0.067\textwidth}}{2} & \multicolumn{2}{p{0.067\textwidth}}{3} & \multicolumn{2}{p{0.067\textwidth}}{4} & \multicolumn{2}{p{0.067\textwidth}}{5} \\
+\multicolumn{25}{|X}{\textbf{1. ACCURACY / CONTENT OF MESSAGE:}} & \multicolumn{1}{|p{\cellwidth}}{\centering\textbf{1}} & \multicolumn{1}{|p{\cellwidth}}{\centering\textbf{2}} & \multicolumn{1}{|p{\cellwidth}}{\centering\textbf{3}} & \multicolumn{1}{|p{\cellwidth}}{\centering\textbf{4}} & \multicolumn{1}{|p{\cellwidth}|}{\centering\textbf{5}} \\%\hhline{~~~~~~~~~~~~~~~~~~~~~~~~~-----}
 
-\multicolumn{20}{p{0.67\textwidth}}{Omissions, Additions, Accuracy
-\textit{The interpreter must convey the message in a complete, correct and intelligible manner in the target language.}} & \multicolumn{2}{p{0.067\textwidth}}{} & \multicolumn{2}{p{0.067\textwidth}}{} & \multicolumn{2}{p{0.067\textwidth}}{} & \multicolumn{2}{p{0.067\textwidth}}{} & \multicolumn{2}{p{0.067\textwidth}}{} \\ \midrule
+\multicolumn{25}{|X}{\cellcolor{lsLightGray}Omissions, Additions, Accuracy
+\textit{The interpreter must convey the message in a complete, correct and intelligible manner in the target language.}} & \multicolumn{1}{|c}{} & \multicolumn{1}{|c}{} & \multicolumn{1}{|c}{} & \multicolumn{1}{|c}{} & \multicolumn{1}{|c|}{} \\ \hline
 
-\multicolumn{2}{p{0.066\textwidth}}{1.1} & \multicolumn{17}{p{0.567\textwidth}}{Was important information omitted in this interpreting session?} & \multicolumn{5}{p{0.167\textwidth}}{YES} & \multicolumn{5}{p{0.167\textwidth}}{NO} \\
-\midrule
+\multicolumn{1}{|l}{1.1} & \multicolumn{25}{l}{Was important information omitted in this interpreting session?} & \multicolumn{2}{c}{YES} & \multicolumn{2}{c|}{NO} \\
+\hline
 
 \rowcolor{lsLightGray}
-\multicolumn{20}{p{0.67\textwidth}}{\textbf{2. TARGET LANGUAGE}} & \multicolumn{2}{p{0.067\textwidth}}{1} & \multicolumn{2}{p{0.067\textwidth}}{2} & \multicolumn{2}{p{0.067\textwidth}}{3} & \multicolumn{2}{p{0.067\textwidth}}{4} & \multicolumn{2}{p{0.067\textwidth}}{5} \\
+\multicolumn{25}{|X}{\textbf{2. TARGET LANGUAGE}} & \multicolumn{1}{|c}{\textbf{1}} & \multicolumn{1}{|c}{\textbf{2}} & \multicolumn{1}{|c}{\textbf{3}} & \multicolumn{1}{|c}{\textbf{4}} & \multicolumn{1}{|c|}{\textbf{5}} \\ %\hhline{~~~~~~~~~~~~~~~~~~~~~~~~~-----}
 
-\multicolumn{20}{p{0.67\textwidth}}{Vocabulary, Sentence Construction, Idiomatic language use, Grammar \textit{The interpreter must always use the most appropriate vocabulary and be loyal to the register of the speaker.}} & \multicolumn{2}{p{0.067\textwidth}}{} & \multicolumn{2}{p{0.067\textwidth}}{} & \multicolumn{2}{p{0.067\textwidth}}{} & \multicolumn{2}{p{0.067\textwidth}}{} & \multicolumn{2}{p{0.067\textwidth}}{} \\ \midrule
+\multicolumn{25}{|X}{\cellcolor{lsLightGray}Vocabulary, Sentence Construction, Idiomatic language use, Grammar \textit{The interpreter must always use the most appropriate vocabulary and be loyal to the register of the speaker.}} & \multicolumn{1}{|c}{} & \multicolumn{1}{|c}{} & \multicolumn{1}{|c}{} & \multicolumn{1}{|c}{} & \multicolumn{1}{|c|}{} \\ \hline
 
 
-\multicolumn{2}{p{0.066\textwidth}}{2.1} & \multicolumn{27}{p{0.9\textwidth}}{The following idiomatic language was used in the speech \begin{itemize}
+\multicolumn{1}{|l}{2.1} & \multicolumn{29}{X|}{The following idiomatic language was used in the speech \begin{itemize}
 \item write down how each statement was interpreted \item comment on whether the phrase was interpreted into idiomatic target language\end{itemize}} \\
-\midrule
+\hline
 
-\multicolumn{2}{p{0.066\textwidth}}{2.1} & \multicolumn{27}{p{0.9\textwidth}}{[00:20mins] ``\textbf{anxious coin tossing}''}\\
-\midrule
+\multicolumn{1}{|l}{} & \multicolumn{29}{X|}{[00:20mins] ``\textbf{anxious coin tossing}''}\\
+\hline
 
-\multicolumn{2}{p{0.066\textwidth}}{2.1} & \multicolumn{27}{p{0.9\textwidth}}{[1:40mins] ``He spoke a lot today about iron and steel. Well, let me tell you something: When it comes to the ANC, \textbf{they iron over the problems and steal all the money}.''} \\
-\midrule
-
-\rowcolor{lsLightGray}
-\multicolumn{20}{p{0.67\textwidth}}{\textbf{3. DELIVERY / COHERENCE / TECHNIQUES and PRESENTATION}} & \multicolumn{2}{p{0.067\textwidth}}{1} & \multicolumn{2}{p{0.067\textwidth}}{2} & \multicolumn{2}{p{0.067\textwidth}}{3} & \multicolumn{2}{p{0.067\textwidth}}{4} & \multicolumn{2}{p{0.067\textwidth}}{5} \\
-
-\multicolumn{20}{p{0.67\textwidth}}{Inarticulate speech, Pauses and hesitations, Audibility, Fillers \textit{The interpreter must maintain sufficient speed to convey the full message of the speaker, employing mechanisms to cope with various complexities, remaining clear and concise.}} & \multicolumn{2}{p{0.067\textwidth}}{} & \multicolumn{2}{p{0.067\textwidth}}{} & \multicolumn{2}{p{0.067\textwidth}}{} & \multicolumn{2}{p{0.067\textwidth}}{} & \multicolumn{2}{p{0.067\textwidth}}{} \\ \midrule
-
-\multicolumn{1}{p{0.033\textwidth}}{3.1} & \multicolumn{18}{p{0.6\textwidth}}{Is the interpreting audible / clear?} & \multicolumn{5}{p{0.167\textwidth}}{YES} & \multicolumn{5}{p{0.167\textwidth}}{NO} \\
-\midrule
-
-\multicolumn{1}{p{0.033\textwidth}}{3.2} & \multicolumn{18}{p{0.633\textwidth}}{Are there any fillers (uhm, ah)?} & \multicolumn{5}{p{0.167\textwidth}}{YES} & \multicolumn{5}{p{0.167\textwidth}}{NO} \\
-\midrule
-
-\multicolumn{1}{p{0.033\textwidth}}{3.3} & \multicolumn{18}{p{0.633\textwidth}}{Are there any unfinished sentences?} & \multicolumn{5}{p{0.167\textwidth}}{YES} & \multicolumn{5}{p{0.167\textwidth}}{NO} \\
-\midrule
-
-\multicolumn{1}{p{0.033\textwidth}}{3.4} & \multicolumn{18}{p{0.633\textwidth}}{Are there any strange noises (coughing, sighing, heavy breathing)?} & \multicolumn{5}{p{0.167\textwidth}}{YES} & \multicolumn{5}{p{0.167\textwidth}}{NO} \\
-\midrule
-
-\multicolumn{1}{p{0.033\textwidth}}{3.5} & \multicolumn{18}{p{0.633\textwidth}}{Is the intonation natural or monotonous?} & \multicolumn{5}{p{0.167\textwidth}}{NATURAL} & \multicolumn{5}{p{0.167\textwidth}}{MONOTONOUS} \\
-\midrule
-
-\multicolumn{1}{p{0.033\textwidth}}{3.6} & \multicolumn{18}{p{0.633\textwidth}}{Is the lag-time managed well?} & \multicolumn{5}{p{0.167\textwidth}}{YES} & \multicolumn{5}{p{0.167\textwidth}}{NO} \\
-\midrule
+\multicolumn{1}{|l}{} & \multicolumn{29}{X|}{[1:40mins] ``He spoke a lot today about iron and steel. Well, let me tell you something: When it comes to the ANC, \textbf{they iron over the problems and steal all the money}.''} \\ \hline
 
 
 \rowcolor{lsLightGray}
-\multicolumn{20}{p{0.667\textwidth}}{\textbf{TOTAL MARK:}} & \multicolumn{5}{p{0.167\textwidth}}{} & \multicolumn{5}{p{0.167\textwidth}}{\textbf{15}} \\
-\lspbottomrule
+\multicolumn{25}{|X}{\textbf{3. DELIVERY / COHERENCE / TECHNIQUES and PRESENTATION}} & \multicolumn{1}{|c}{\textbf{1}} & \multicolumn{1}{|c}{\textbf{2}} & \multicolumn{1}{|c}{\textbf{3}} & \multicolumn{1}{|c}{\textbf{4}} & \multicolumn{1}{|c|}{\textbf{5}} \\ %\hhline{~~~~~~~~~~~~~~~~~~~~~~~~~-----}
+
+\multicolumn{25}{|X}{\cellcolor{lsLightGray}Inarticulate speech, Pauses and hesitations, Audibility, Fillers \textit{The interpreter must maintain sufficient speed to convey the full message of the speaker, employing mechanisms to cope with various complexities, remaining clear and concise.}} & \multicolumn{1}{|c}{} & \multicolumn{1}{|c}{} & \multicolumn{1}{|c}{} & \multicolumn{1}{|c}{} & \multicolumn{1}{|c|}{} \\ \hline
+
+
+\multicolumn{1}{|l}{3.1} & \multicolumn{25}{l}{Is the interpreting audible / clear?} & \multicolumn{2}{c}{YES} & \multicolumn{2}{c|}{NO} \\ \hline
+
+\multicolumn{1}{|l}{3.2} & \multicolumn{25}{l}{Are there any fillers (uhm, ah)?} & \multicolumn{2}{c}{YES} & \multicolumn{2}{c|}{NO} \\ \hline
+
+
+\multicolumn{1}{|l}{3.3} & \multicolumn{25}{l}{Are there any unfinished sentences?} & \multicolumn{2}{c}{YES} & \multicolumn{2}{c|}{NO} \\ \hline
+
+
+\multicolumn{1}{|l}{3.4} & \multicolumn{25}{l}{Are there any strange noises (coughing, sighing, heavy breathing)?} & \multicolumn{2}{c}{YES} & \multicolumn{2}{c|}{NO} \\ \hline
+
+
+\multicolumn{1}{|l}{3.5} & \multicolumn{25}{l}{Is the intonation natural or monotonous?} & \multicolumn{2}{c}{NAT.} & \multicolumn{2}{c|}{MON.} \\ \hline
+
+\multicolumn{1}{|l}{3.6} & \multicolumn{25}{l}{Is the lag-time managed well?} & \multicolumn{2}{c}{YES} & \multicolumn{2}{c|}{NO} \\ \hline
+
+
+\rowcolor{lsLightGray}
+\multicolumn{15}{|l}{\textbf{TOTAL MARK:}} & \multicolumn{15}{r|}{\textbf{/ 15}} \\
+\hline
 \end{tabularx}
+}
 
 \section*{Addendum B: Questionnaire}
 \label{03:addendum:B}
