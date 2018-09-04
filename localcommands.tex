@@ -7,6 +7,12 @@
 %Commands from Conversion, to be deleted before publication
 \newcommand{\textstyleannotationreference}{}
 
+\newcommand{\devauxcos}{%
+\draw[-{Triangle[]}] (xyz cs:x=-3) -- (0,0) -- (xyz cs:x=3);
+\draw[-{Triangle[]}] (xyz cs:y=-3) -- (0,0) -- (xyz cs:y=3);
+\draw[-{Triangle[]}] (xyz cs:z=-3) -- (0,0) -- (xyz cs:z=3);}
+
+% \tikzset{devauxdot/.style={fill,circle,minimum size=3pt}]}
 
 % Fix for microtype errors, adapted from https://tex.stackexchange.com/questions/373594/microtype-producing-dozens-of-unknown-slot-number-warnings#373607
 \makeatletter
