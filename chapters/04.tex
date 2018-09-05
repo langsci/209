@@ -98,10 +98,10 @@ The above studies rely on attributing a role label with certain characteristics 
 \begin{tikzpicture}
         [axisdesc/.style={font=\footnotesize,text width=2.5cm,align=left}]
         \devauxcos%definition is in localcommands.tex
-\node [axisdesc,above]   at (xyz cs:x=-3)   {Alignment with court participants};
-\node [axisdesc,above]   at (xyz cs:x=3)   {Alignment with defendant\slash witness};
+\node [axisdesc,below]   at (xyz cs:x=-3)   {Alignment with court participants};
+\node [axisdesc,below]   at (xyz cs:x=3)   {Alignment with defendant\slash witness};
 \node [axisdesc,text width=2.75cm,right]   at (xyz cs:y=3)   {Presentation of self};
-\node [axisdesc,text width=3.5cm,below,fill=white]   at (xyz cs:z=3)   {Interaction management};
+\node [axisdesc,text width=3.5cm,right,fill=white]   at (xyz cs:z=-3)   {Interaction management};
 \end{tikzpicture}
 \caption{\citet{Llewellyn-Jones2014}'s role-space template\label{fig:devaux:1}}
 \end{figure}
@@ -363,7 +363,7 @@ As a result, these participants’ role-space model was split, and their shapes 
 \begin{figure}
 \begin{tikzpicture}
 \devauxcos%see localcommands.tex
-\def\devauxlist{x=-1.5,y=-2.5,z=2.5}
+\def\devauxlist{x=-1,y=-2.5,z=2.5}
 \foreach \i in \devauxlist {
         \node[fill=black,circle,minimum size=5pt,inner sep=0pt] at (xyz cs:\i) {};
         \foreach \j in \devauxlist {
@@ -392,7 +392,7 @@ As a result, these participants’ role-space model was split, and their shapes 
 \begin{figure}
 \begin{tikzpicture}
 \devauxcos%see localcommands.tex
-\def\devauxlist{x=-2.5,y=1.5,y=-1.5,z=2.5}
+\def\devauxlist{x=-2.5,y=1.5,y=-1.5,z=2}
 \foreach \i in \devauxlist {
         \node[fill=black,circle,minimum size=5pt,inner sep=0pt] at (xyz cs:\i) {};
         \foreach \j in \devauxlist {
@@ -402,7 +402,7 @@ As a result, these participants’ role-space model was split, and their shapes 
 \end{tikzpicture}
 \begin{tikzpicture}
 \devauxcos%see localcommands.tex
-\def\devauxlist{x=2.5,y=1.5,y=-1.5,z=1.5}
+\def\devauxlist{x=2.5,y=1.5,y=-1.5,z=1}
 \foreach \i in \devauxlist {
         \node[fill=black,circle,minimum size=5pt,inner sep=0pt] at (xyz cs:\i) {};
         \foreach \j in \devauxlist {
@@ -416,7 +416,7 @@ As a result, these participants’ role-space model was split, and their shapes 
 \begin{figure}
 \begin{tikzpicture}
 \devauxcos%see localcommands.tex
-\def\devauxlist{x=-2.5,y=2.5,y=-1.5,z=2.5}
+\def\devauxlist{x=-2.5,y=2.5,y=-1.5,z=2}
 \foreach \i in \devauxlist {
         \node[fill=black,circle,minimum size=5pt,inner sep=0pt] at (xyz cs:\i) {};
         \foreach \j in \devauxlist {
@@ -426,7 +426,7 @@ As a result, these participants’ role-space model was split, and their shapes 
 \end{tikzpicture}
 \begin{tikzpicture}
 \devauxcos%see localcommands.tex
-\def\devauxlist{x=2.5,y=2.5,y=-1.5,z=1.5}
+\def\devauxlist{x=2.5,y=2.5,y=-1.5,z=1}
 \foreach \i in \devauxlist {
         \node[fill=black,circle,minimum size=5pt,inner sep=0pt] at (xyz cs:\i) {};
         \foreach \j in \devauxlist {
