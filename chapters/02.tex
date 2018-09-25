@@ -79,7 +79,8 @@ Not shown in the graphic representation of the model (\figref{fig:prandi:1}), bu
 \begin{figure}
 	%%please move the includegraphics inside the {figure} environment
 	%%\includegraphics[width=\textwidth]{Ch2-img9.png}
-\caption{Cognitive Load Model \citep[163]{Wickens2002} \label{fig:prandi:1}}
+	\includegraphics[width=.7\textwidth]{figures/wickenstiescube.pdf}
+\caption{Cognitive Load Model (adapted from \citealt[163]{Wickens2002})\label{fig:prandi:1}}
 \end{figure}
 
 The result of this adaptation is a Cognitive Resource Footprint (\textsc{crf}), which Seeber also develops for shadowing and sight-translation \citep{Seeber2007}. Simultaneous interpreting is the combination of two main tasks: the listening and comprehension task on the one hand, and the production and monitoring task on the other. As shown by 2, the first task mobilizes auditory-verbal and cognitive verbal resources at the perceptual-cognitive stage (interpreters receive the aural stimulus, i.e. the words pronounced by the speaker, and analyze the verbal message). The second task requires the same kind of resources at the perceptual-cognitive stage and additional vocal-verbal resources at the response stage (interpreters verbally ``respond'' to what they have heard by delivering the message in the target language, but also listen to and monitor their own rendition).
@@ -87,7 +88,8 @@ The result of this adaptation is a Cognitive Resource Footprint (\textsc{crf}), 
 \begin{figure}
 	%%please move the includegraphics inside the {figure} environment
 	%%\includegraphics[width=\textwidth]{Ch2-img10.png}
-	\caption{\label{fig:prandi:2}Cognitive resource footprint for simultaneous interpreting \citep[1385]{Seeber2007}}
+	\includegraphics[width=.6\textwidth]{figures/Seeberlozenge.pdf}
+	\caption{\label{fig:prandi:2}Cognitive resource footprint for simultaneous interpreting (adapted from \citealt[1385]{Seeber2007})}
 \end{figure}
  
 The footprint is integrated by a Conflict Matrix, which shows the degree of interference between two co-occurring tasks as the sum of the demand vectors for each sub-task and of the individual conflict coefficients between sub-tasks (see \figref{fig:prandi:3}). 
@@ -99,7 +101,10 @@ The possibility to ``quantify'' the degree of interference between co-occurring 
 \begin{figure}
 	%%please move the includegraphics inside the {figure} environment
 	%%\includegraphics[width=\textwidth]{Ch2-img11.png}
-\caption{Conflict matrix for simultaneous interpreting \citep[1385]{Seeber2007}\label{fig:prandi:3}}
+	\begin{tikzpicture}
+	
+	\end{tikzpicture}
+\caption{Conflict matrix for simultaneous interpreting (adapted from \citealt[1385]{Seeber2007})\label{fig:prandi:3}}
 \end{figure}
 
 \subsection{Hypotheses on \textsc{si} with \textsc{cai}}\label{sec:prandi:2.2}
@@ -112,13 +117,7 @@ It goes without saying that the \textsc{crf} shown in \figref{fig:prandi:5} appl
 \begin{figure}
 	%%please move the includegraphics inside the {figure} environment
 	%%\includegraphics[width=\textwidth]{Ch2-img12.png}
-	\bfseries
-
-		\textbf{Identify term}
-
-		\textbf{Look up}
-		
-		\textbf{Read term}
+        \includegraphics[width=.7\textwidth]{figures/fig2-4.pdf}
 \label{fig:prandi:4}\caption{Additional cognitive resources recruited during \textsc{si} with a \textsc{cai} tool/electronic glossary}
 \end{figure}
 
@@ -127,6 +126,7 @@ If we only took into consideration the Cognitive Resource Footprint, we would no
 \begin{figure}
 	%%please move the includegraphics inside the {figure} environment
 	%%\includegraphics[width=\textwidth]{Ch2-img13.png}
+	\includegraphics[width=.7\textwidth]{figures/fig2-5.pdf}
 \caption{\label{fig:prandi:5}Cognitive Resource Footprint for \textsc{si} with a \textsc{cai} tool/electronic glossary}
 \end{figure}
 
@@ -135,12 +135,90 @@ The integration of automatic speech recognition in a \textsc{cai} tool (see \cit
 \begin{figure}
 	%%please move the includegraphics inside the {figure} environment
 	%%\includegraphics[width=\textwidth]{Ch2-img14.png}
+\resizebox{\textwidth}{!}{\begin{tikzpicture}[
+        hea/.style={align=flush center,text width=1.33cm},
+        rsma/.style={rotate=90},
+        rhea/.style={align=flush center,text width=1.33cm,rotate=90},
+        row 1/.style={minimum height=0.665cm},
+        row 2/.style={minimum height=0.665cm},
+        column 1/.style={minimum width=0.665cm},
+        column 2/.style={minimum width=0.665cm},
+        ]
+\sffamily\footnotesize
+\matrix (prandifig6) [matrix of nodes, nodes in empty cells,ampersand replacement=\&] {
+\&  \&  \&  \&  \& ~ \&  \&  \&  \&  \&  \&  \\  %\multicolumn{8}{c}{listening \\& comprehension}\\
+\&  \&  \&  \&  \& ~ \&  \&  \&  \&  \&  \&  \\  % \multicolumn{4}{c}{perceptual} \& \multicolumn{2}{c}{cognitive} \& \multicolumn{2}{c}{response}\\
+\&  \&  \& {vector} \& {$\emptyset$} \& {$\emptyset$} \& {$\emptyset$} \& {1} \& {$\emptyset$} \& {1} \& {$\emptyset$} \& {$\emptyset$}\\
+\&  \& \node[rsma]{demand}; \&  \& \node[hea]{visual\linebreak spatial}; \& \node[hea]{visual\linebreak verbal}; \& \node[hea]{auditory\linebreak spatial}; \& \node[hea] (prandifig6-3-8) {auditory\linebreak verbal}; \& \node[hea]{cognitive\linebreak spatial}; \& \node[hea] (prandifig6-3-10) {cognitive\linebreak verbal}; \& \node[hea]{response\linebreak spatial}; \& \node[hea]{response\linebreak verbal}; \\
+\&  \& \node[rsma] (prandifig6-5-3) {$\emptyset$}; \& \node[rhea]{visual\linebreak spatial};    \& {0.8} \& {0.6} \& {0.6} \& {0.4} \& {0.7} \& {0.5} \& {0.4} \& {0.2}\\
+\&  \& \node[rsma] (prandifig6-6-3) {$\emptyset$}; \& \node[rhea]{visual\linebreak verbal};     \& {0.6} \& {0.8} \& {0.4} \& {0.6} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
+\&  \& \node[rsma]{$\emptyset$}; \& \node[rhea]{auditory\linebreak spatial};  \& {0.6} \& {0.4} \& {0.8} \& {0.4} \& {0.7} \& {0.5} \& {0.4} \& {0.2}\\
+\&  \& \node[rsma] (prandifig6-8-3) {1};           \& \node[rhea]{auditory\linebreak verbal};   \& {0.4} \& {0.6} \& {0.4} \& {0.8} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
+\&  \& \node[rsma]{$\emptyset$}; \& \node[rhea]{cognitive\linebreak spatial}; \& {0.7} \& {0.5} \& {0.7} \& {0.5} \& {0.8} \& {0.6} \& {0.6} \& {0.4}\\
+\&  \& \node[rsma] (prandifig6-10-3) {1};           \& \node[rhea]{cognitive\linebreak verbal};  \& {0.5} \& {0.7} \& {0.5} \& {0.7} \& {0.6} \& {0.8} \& {0.4} \& {0.6}\\
+\&  \& \node[rsma] (prandifig6-11-3) {$\emptyset$}; \& \node[rhea]{response\linebreak spatial};  \& {0.4} \& {0.2} \& {0.4} \& {0.2} \& {0.6} \& {0.4} \& {0.8} \& {0.6}\\
+\&  \& \node[rsma] (prandifig6-12-3) {1};           \& \node[rhea]{response\linebreak verbal};   \& {0.2} \& {0.4} \& {0.2} \& {0.4} \& {0.4} \& {0.6} \& {0.6} \& {1.0}\\
+};
+\node [fit=(prandifig6-1-5)(prandifig6-1-12)] {listening \& comprehension};
+\node [fit=(prandifig6-2-5)(prandifig6-2-8)] {perceptual};
+\node [fit=(prandifig6-2-9)(prandifig6-2-10)] {cognitive};
+\node [fit=(prandifig6-2-11)(prandifig6-2-12)] {responose};
+\node [overlay,fit=(prandifig6-5-2)(prandifig6-8-2)  ,rotate=90,text width=2.66cm,inner sep=0pt] {perceptual};
+\node [overlay,fit=(prandifig6-9-2)(prandifig6-10-2) ,rotate=90,text width=2.66cm,inner sep=0pt] {cognitive};
+\node [overlay,fit=(prandifig6-11-2)(prandifig6-12-2),rotate=90,text width=2.66cm,inner sep=0pt] {responose};
+\node [overlay,rotate=90,fit=(prandifig6-5-1)(prandifig6-12-1),text width=8cm,inner sep=0pt] {production \& monitoring};
+\begin{scope}[on background layer]
+\foreach \i in {5,6,8,10,11,12} \node [fit=(prandifig6-\i-3)(prandifig6-\i-12), fill=black!12,minimum height=1.4cm,yshift=-.5ex,inner ysep=0pt] {};
+\foreach \j in {8,10} \node [fit=(prandifig6-3-\j)(prandifig6-12-\j), fill=black!12,minimum width=1.26cm,inner xsep=0pt] {};
+\foreach \x in {5,6,8,10,11,12} {
+    \foreach \y in {8,10} \node [fit=(prandifig6-\x-\y), fill=black!50,minimum width=1.5cm,minimum height=1.4cm,yshift=-.75ex] {};
+    }
+\end{scope}
+\end{tikzpicture}}
 \caption{Conflict matrix for \textsc{si} with spreadsheet (Excel) TIC = 16.8\label{fig:prandi:7}}
 \end{figure}
 
 \begin{figure}
 	%%please move the includegraphics inside the {figure} environment
 	%%\includegraphics[width=\textwidth]{Ch2-img15.png}
+\resizebox{\textwidth}{!}{\begin{tikzpicture}[
+        hea/.style={align=flush center,text width=1.33cm},
+        rsma/.style={rotate=90},
+        rhea/.style={align=flush center,text width=1.33cm,rotate=90},
+        row 1/.style={minimum height=0.665cm},
+        row 2/.style={minimum height=0.665cm},
+        column 1/.style={minimum width=0.665cm},
+        column 2/.style={minimum width=0.665cm},
+        ]
+\sffamily\footnotesize
+\matrix (prandifig6) [matrix of nodes, nodes in empty cells,ampersand replacement=\&] {
+\&  \&  \&  \&  \& ~ \&  \&  \&  \&  \&  \&  \\  %\multicolumn{8}{c}{listening \\& comprehension}\\
+\&  \&  \&  \&  \& ~ \&  \&  \&  \&  \&  \&  \\  % \multicolumn{4}{c}{perceptual} \& \multicolumn{2}{c}{cognitive} \& \multicolumn{2}{c}{response}\\
+\&  \&  \& {vector} \& {$\emptyset$} \& {$\emptyset$} \& {$\emptyset$} \& {1} \& {$\emptyset$} \& {1} \& {$\emptyset$} \& {$\emptyset$}\\
+\&  \& \node[rsma]{demand}; \&  \& \node[hea]{visual\linebreak spatial}; \& \node[hea]{visual\linebreak verbal}; \& \node[hea]{auditory\linebreak spatial}; \& \node[hea] (prandifig6-3-8) {auditory\linebreak verbal}; \& \node[hea]{cognitive\linebreak spatial}; \& \node[hea] (prandifig6-3-10) {cognitive\linebreak verbal}; \& \node[hea]{response\linebreak spatial}; \& \node[hea]{response\linebreak verbal}; \\
+\&  \& \node[rsma]{$\emptyset$}; \& \node[rhea]{visual\linebreak spatial};                       \& {0.8} \& {0.6} \& {0.6} \& {0.4} \& {0.7} \& {0.5} \& {0.4} \& {0.2}\\
+\&  \& \node[rsma]{$\emptyset$}; \& \node[rhea]{visual\linebreak verbal};                        \& {0.6} \& {0.8} \& {0.4} \& {0.6} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
+\&  \& \node[rsma]{$\emptyset$}; \& \node[rhea]{auditory\linebreak spatial};                     \& {0.6} \& {0.4} \& {0.8} \& {0.4} \& {0.7} \& {0.5} \& {0.4} \& {0.2}\\
+\&  \& \node[rsma] (prandifig6-8-3) {1};           \& \node[rhea]{auditory\linebreak verbal};    \& {0.4} \& {0.6} \& {0.4} \& {0.8} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
+\&  \& \node[rsma]{$\emptyset$}; \& \node[rhea]{cognitive\linebreak spatial};                    \& {0.7} \& {0.5} \& {0.7} \& {0.5} \& {0.8} \& {0.6} \& {0.6} \& {0.4}\\
+\&  \& \node[rsma] (prandifig6-10-3) {1};           \& \node[rhea]{cognitive\linebreak verbal};  \& {0.5} \& {0.7} \& {0.5} \& {0.7} \& {0.6} \& {0.8} \& {0.4} \& {0.6}\\
+\&  \& \node[rsma]{$\emptyset$}; \& \node[rhea]{response\linebreak spatial};                     \& {0.4} \& {0.2} \& {0.4} \& {0.2} \& {0.6} \& {0.4} \& {0.8} \& {0.6}\\
+\&  \& \node[rsma] (prandifig6-12-3) {1};           \& \node[rhea]{response\linebreak verbal};   \& {0.2} \& {0.4} \& {0.2} \& {0.4} \& {0.4} \& {0.6} \& {0.6} \& {1.0}\\
+};
+\node [fit=(prandifig6-1-5)(prandifig6-1-12)] {listening \& comprehension};
+\node [fit=(prandifig6-2-5)(prandifig6-2-8)] {perceptual};
+\node [fit=(prandifig6-2-9)(prandifig6-2-10)] {cognitive};
+\node [fit=(prandifig6-2-11)(prandifig6-2-12)] {responose};
+\node [overlay,fit=(prandifig6-5-2)(prandifig6-8-2)  ,rotate=90,text width=2.66cm,inner sep=0pt] {perceptual};
+\node [overlay,fit=(prandifig6-9-2)(prandifig6-10-2) ,rotate=90,text width=2.66cm,inner sep=0pt] {cognitive};
+\node [overlay,fit=(prandifig6-11-2)(prandifig6-12-2),rotate=90,text width=2.66cm,inner sep=0pt] {responose};
+\node [overlay,rotate=90,fit=(prandifig6-5-1)(prandifig6-12-1),text width=8cm,inner sep=0pt] {production \& monitoring};
+\begin{scope}[on background layer]
+\foreach \i in {8,10,12} \node [fit=(prandifig6-\i-3)(prandifig6-\i-12), fill=black!12,minimum height=1.4cm,yshift=-.5ex] {};
+\foreach \j in {8,10} \node [fit=(prandifig6-3-\j)(prandifig6-12-\j), fill=black!12,minimum width=1.26cm,inner xsep=0pt] {};
+\foreach \x/\y in {8/8,8/10,10/8,10/10,12/8,12/10} \node [fit=(prandifig6-\x-\y), fill=black!50,minimum width=1.5cm,minimum height=1.4cm,yshift=-.75ex] {};
+\end{scope}
+\end{tikzpicture}}
 \caption{Conflict matrix for \textsc{si} with \textsc{cai} (InterpretBank) TIC = 14.8\label{fig:prandi:6}}
 \end{figure}
 
@@ -157,7 +235,7 @@ Our research projects aims at answering three fundamental questions:
 \item Can a combination of eye-tracking measures, pupillometry and transcription analysis be used to acquire data on the interpreting process, the terminological quality of the product and the usability of \textsc{cai} tools?
 \end{itemize}
 
-In order to collect first data to help answer these questions, an exploratory study was conducted between May and July 2017 at the University of Mainz/Germersheim. For the scope of this paper, we will report on the observations made during the analysis of the product, while further work will be required to address the issues related to the process of simultaneous interpreting with \textsc{cai} tools.
+In order to collect first data to help answer these questions, an exploratory study was conducted between May and July 2017 at the University of Mainz\slash Germersheim. For the scope of this paper, we will report on the observations made during the analysis of the product, while further work will be required to address the issues related to the process of simultaneous interpreting with \textsc{cai} tools.
 
 \subsection{Structure of the study: sample, duration, training and data collection}\label{sec:prandi:3.3}
 The pilot study involved 6 advanced students of the Master’s degree in conference interpreting of the University of Mainz/Germersheim. Prior to the study, all students had had at least 3 semesters of practice in simultaneous and consecutive interpreting and had English in their combination, as B or C language. Half of the sample was made up of German natives (one male and two females), half of Italian natives (one female and two males). The test subjects were recruited by e-mail and their participation in the experiment was voluntary. No monetary compensation was offered, but the participation in the study gave the trainees the opportunity to learn about a new tool, InterpretBank, and to practice in the booth with a laptop, something they rarely do in class.
@@ -329,7 +407,7 @@ As previously stated, half of the stimuli were classified as needing a glossary 
 \caption{Search behavior per stimuli category\label{fig:prandi:9}}
 \end{figure}
 
-As shown in \figref{fig:prandi:9}, the percentage of terms classified as needing a query that were actually searched varies among the test subjects, while it is quite similar in the case of terms classified as not needing a query. A notable exception is test subject \textsc{cai}-\textsc{PS}1-06, who searched a much lower number of terms than the other test subjects. The percentages are very similar for the German natives (participants \textsc{cai}-\textsc{PS}1-01, \textsc{cai}-\textsc{PS}1-02 and \textsc{cai}-PS1-03), although they looked up different terms.
+As shown in \figref{fig:prandi:9}, the percentage of terms classified as needing a query that were actually searched varies among the test subjects, while it is quite similar in the case of terms classified as not needing a query. A notable exception is test subject \textsc{cai}-\textsc{ps1-06}, who searched a much lower number of terms than the other test subjects. The percentages are very similar for the German natives (participants \textsc{cai}-\textsc{ps1-01}, \textsc{cai}-\textsc{ps1-02} and \textsc{cai-ps1-03}), although they looked up different terms.
 
 We also verified which terms classified as needing a glossary query had not been looked up by any subject. 5 terms out of 54 were not looked up by anyone and should therefore either be moved to the non-query category or replaced by more specialized, less frequent terms. Of the terms classified as not needing a query in the glossary, only 1 out of 54 was looked up by all test subjects. It should therefore either be classified differently or replaced. 
 
@@ -414,7 +492,7 @@ If we take into consideration the morphological complexity\textstyleannotationre
 \caption{Morphological complexity and percentage of terms searched (terms not needing a query). N=18/category \label{fig:prandi:11}}
 \end{figure}
 
-All in all, our a-priori classification of the stimuli was confirmed by the sample, if we exclude the outlier \textsc{cai}-\textsc{PS}1-06. Further research will be needed to check our hypotheses on the role played by the position and the morphological complexity of the stimuli.
+All in all, our a-priori classification of the stimuli was confirmed by the sample, if we exclude the outlier \textsc{cai}-\textsc{ps1-06}. Further research will be needed to check our hypotheses on the role played by the position and the morphological complexity of the stimuli.
 
 \subsection{Tools used and precision of renditions}\label{sec:prandi:5.2}
 
@@ -549,7 +627,7 @@ Figures 12, 13 and 14 sum up the degree of terminological precision achieved whe
 
 Inter-subject variability is too high to draw initial conclusions on this aspect, but Excel seems to lead to the worst performance, since we can notice more occurrences of zero renditions or unacceptable renditions than for Word and InterpretBank. This is probably due to the fact that, when working with Excel, our test subjects did not have the possibility to view all the results of a query, but only to manually skip to the next occurrence, which might make the query too cumbersome to be performed in the very small amount of time available to the interpreter. InterpretBank seems to perform slightly better than Word, but this should be further verified. Usability probably plays a role in this respect, so eye-tracking measures will be key in determining how the user interface facilitates or hinders the identification of the equivalent needed.
 
-As for the morphological complexity, we expected queries performed with InterpretBank to be more effective – leading to a higher level of precision – than queries performed with Word and Excel, especially for more complex terms (trigrams). In the small sample analyzed in the pilot study, queries performed with InterpretBank lead to higher precision for unigrams in 5 cases out of 6. The only exception is participant \textsc{cai}-\textsc{PS}1-06, for whom we have very few data points when compared to the rest of the sample. For bigrams and trigrams the results are less uniform - queries with InterpretBank are more effective than Word and Excel in 3 participants out of 6. While the sample analyzed is too small to draw conclusions, this aspect can be further analyzed in a larger sample, where differences might be significant.
+As for the morphological complexity, we expected queries performed with InterpretBank to be more effective – leading to a higher level of precision – than queries performed with Word and Excel, especially for more complex terms (trigrams). In the small sample analyzed in the pilot study, queries performed with InterpretBank lead to higher precision for unigrams in 5 cases out of 6. The only exception is participant \textsc{cai}-\textsc{ps1-06}, for whom we have very few data points when compared to the rest of the sample. For bigrams and trigrams the results are less uniform - queries with InterpretBank are more effective than Word and Excel in 3 participants out of 6. While the sample analyzed is too small to draw conclusions, this aspect can be further analyzed in a larger sample, where differences might be significant.
 
 It should be noted that in order to facilitate the analysis, we first took into consideration only the terms and the content conveyed by them, not by the whole sentences. This analysis hence remains focused at a microscopic level, that of terminology. Since the ultimate goal of \textsc{cai} tools is that of improving the overall quality of the rendition, we deem necessary to expand our analysis to the sentence level, to verify whether a higher level of precision achieved in the rendition of the terminological unit results in a correct and complete rendition of the sentence it is embedded in – and of the following ones – or whether, on the contrary, the query, despite being successful, leads to errors or omissions. To this aim, the transcriptions of the test subjects’ renditions were annotated following \citeauthor{Barik1971}’s (\citeyear{Barik1971}) classification of omissions, additions and errors in \textsc{si}. In the data analysis, we decided to focus on three categories, which represent the most serious issues encountered in the rendition, namely E4 (substantial phrasing change), E5 (gross phrasing change) and a third category which corresponds to a complete omission of the sentence, which we labeled as M5.\footnote{See \citet{Barik1971} for a complete classification of errors, omissions and additions in \textsc{si}.} On the other hand, to make our analysis easier, we grouped in one category the renditions that did not present any issue or only presented less serious issues, such as skipping omissions and mild phrasing changes. The classification of errors and omissions provides an element of subjectivity, which might be constrained by taking into consideration only clearly wrong sentences or total omissions.
 
