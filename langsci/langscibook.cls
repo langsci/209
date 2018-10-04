@@ -55,10 +55,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{langscibook}[2018/01/15 Language Science Press]
 
-\RequirePackage[]{silence}
-\WarningsOff[hyperref]
-\WarningsOff[tocstyle]
-%TODO add a warning to log that warnings are disabled for some packages
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -1514,7 +1510,8 @@ Storage and cataloguing done by FU Berlin \\[3ex]
 \defbibheading{french}{\chapter{Références bibliographiques}\sloppy}
 \defbibheading{german}{\chapter{Literaturverzeichnis}\sloppy}
 \defbibheading{portuguese}{\chapter{Referências}\sloppy}
-\defbibheading{chinese}{\chapter{参考文献}\sloppy}
+\defbibheading{chinese}{\chapter{References}\sloppy}
+
 
 
 % fix \citep* et.al.
@@ -1795,8 +1792,8 @@ width=.8\textwidth
     \let\isold\is
     \let\ilold\il
     \let\iaold\ia
-    \renewcommand{\isi}[1]{\sethlcolor{lsSoftGreen}\hl{#1}\isold{#1}}
-    \renewcommand{\is}[1]{{\tikzstyle{notestyleraw} += [text width=1.5cm]\todo[color=lsSoftGreen,size=\scriptsize]{\tiny#1}\isold{#1}}}
+    \renewcommand{\isi}[1]{\sethlcolor{green}\hl{#1}\isold{#1}}
+    \renewcommand{\is}[1]{{\tikzstyle{notestyleraw} += [text width=1.5cm]\todo[color=green,size=\scriptsize]{\tiny#1}\isold{#1}}}
     \renewcommand{\ili}[1]{\sethlcolor{yellow}\hl{#1}\ilold{#1}}
     \renewcommand{\il}[1]{{\tikzstyle{notestyleraw} += [text width=1.5cm]\todo[color=yellow,size=\scriptsize]{\tiny#1}\ilold{#1}}}
     \renewcommand{\iai}[1]{\sethlcolor{pink}\hl{#1}\iaold{#1}}
