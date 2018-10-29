@@ -80,16 +80,16 @@ The possibility to ``quantify'' the degree of interference between co-occurring 
 \matrix (prandifig3) [matrix of nodes, nodes in empty cells,ampersand replacement=\&] {
 \&  \&  \&  \&  \& ~ \&  \&  \&  \&  \&  \&  \\  %\multicolumn{8}{c}{listening \\& comprehension}\\
 \&  \&  \&  \&  \& ~ \&  \&  \&  \&  \&  \&  \\  % \multicolumn{4}{c}{perceptual} \& \multicolumn{2}{c}{cognitive} \& \multicolumn{2}{c}{response}\\
-\&  \&  \& {vector} \& {$\emptyset$} \& {$\emptyset$} \& {$\emptyset$} \& {1} \& {$\emptyset$} \& {1} \& {$\emptyset$} \& {$\emptyset$}\\
+\&  \&  \& {vector} \& {$\emptyset$} \& {$\emptyset$} \& {$\emptyset$} \& {1\vphantom{$\emptyset$}} \& {$\emptyset$} \& {1\vphantom{$\emptyset$}} \& {$\emptyset$} \& {$\emptyset$}\\
 \&  \& \node[rsma]{demand}; \&  \& \node[hea]{visual\linebreak spatial}; \& \node[hea]{visual\linebreak verbal}; \& \node[hea]{auditory\linebreak spatial}; \& \node[hea] (prandifig3-4-8) {auditory\linebreak verbal}; \& \node[hea]{cognitive\linebreak spatial}; \& \node[hea] (prandifig3-4-10) {cognitive\linebreak verbal}; \& \node[hea]{response\linebreak spatial}; \& \node[hea] (prandifig3-4-12) {response\linebreak verbal}; \\
 \&  \& \node[rsma] (prandifig3-5-3) {$\emptyset$}; \& \node[rhea]{visual\linebreak spatial};                       \& {0.8} \& {0.6} \& {0.6} \& {0.4} \& {0.7} \& {0.5} \& {0.4} \& {0.2}\\
 \&  \& \node[rsma] (prandifig3-6-3) {$\emptyset$}; \& \node[rhea]{visual\linebreak verbal};                        \& {0.6} \& {0.8} \& {0.4} \& {0.6} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
 \&  \& \node[rsma] (prandifig3-7-3) {$\emptyset$}; \& \node[rhea]{auditory\linebreak spatial};                     \& {0.6} \& {0.4} \& {0.8} \& {0.4} \& {0.7} \& {0.5} \& {0.4} \& {0.2}\\
-\&  \& \node[rsma] (prandifig3-8-3) {1};           \& \node[rhea]{auditory\linebreak verbal};    \& {0.4} \& {0.6} \& {0.4} \& {0.8} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
+\&  \& \node[rsma] (prandifig3-8-3) {1\vphantom{$\emptyset$}};           \& \node[rhea]{auditory\linebreak verbal};    \& {0.4} \& {0.6} \& {0.4} \& {0.8} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
 \&  \& \node[rsma] (prandifig3-9-3) {$\emptyset$}; \& \node[rhea]{cognitive\linebreak spatial};                    \& {0.7} \& {0.5} \& {0.7} \& {0.5} \& {0.8} \& {0.6} \& {0.6} \& {0.4}\\
-\&  \& \node[rsma] (prandifig3-10-3) {1};           \& \node[rhea]{cognitive\linebreak verbal};  \& {0.5} \& {0.7} \& {0.5} \& {0.7} \& {0.6} \& {0.8} \& {0.4} \& {0.6}\\
+\&  \& \node[rsma] (prandifig3-10-3) {1\vphantom{$\emptyset$}};           \& \node[rhea]{cognitive\linebreak verbal};  \& {0.5} \& {0.7} \& {0.5} \& {0.7} \& {0.6} \& {0.8} \& {0.4} \& {0.6}\\
 \&  \& \node[rsma] (prandifig3-11-3) {$\emptyset$}; \& \node[rhea]{response\linebreak spatial};                     \& {0.4} \& {0.2} \& {0.4} \& {0.2} \& {0.6} \& {0.4} \& {0.8} \& {0.6}\\
-\&  \& \node[rsma] (prandifig3-12-3) {1};           \& \node[rhea] (prandifig3-12-4) {response\linebreak verbal};   \& {0.2} \& {0.4} \& {0.2} \& {0.4} \& {0.4} \& {0.6} \& {0.6} \& {1.0}\\
+\&  \& \node[rsma] (prandifig3-12-3) {1\vphantom{$\emptyset$}};           \& \node[rhea] (prandifig3-12-4) {response\linebreak verbal};   \& {0.2} \& {0.4} \& {0.2} \& {0.4} \& {0.4} \& {0.6} \& {0.6} \& {1.0}\\
 };
 \node [fit=(prandifig3-1-5)(prandifig3-1-12)] {listening \& comprehension};
 \node [fit=(prandifig3-2-5)(prandifig3-2-8)] {perceptual};
@@ -101,7 +101,7 @@ The possibility to ``quantify'' the degree of interference between co-occurring 
 \node [overlay,rotate=90,fit=(prandifig3-5-1)(prandifig3-12-1),text width=8cm,inner sep=0pt] {production \& monitoring};
 \begin{scope}[on background layer]
 \foreach \i in {8,10,12} \node [fit=(prandifig3-\i-3)(prandifig3-\i-12), fill=black!12,minimum height=1.4cm,yshift=-.5ex] {};
-\foreach \j in {8,10} \node [fit=(prandifig3-4-\j)(prandifig3-12-\j), fill=black!12,minimum width=1.26cm,inner xsep=0pt] {};
+\foreach \j in {8,10} \node [fit=(prandifig3-3-\j)(prandifig3-12-\j), fill=black!12,minimum width=1.26cm,inner xsep=0pt] {};
 \foreach \x/\y in {8/8,8/10,10/8,10/10,12/8,12/10} \node [fit=(prandifig3-\x-\y), fill=black!50,minimum width=1.5cm,minimum height=1.4cm,yshift=-.75ex] {};
 \end{scope}
 \draw (prandifig3-4-12.south east) -| (prandifig3-12-4.south west);
@@ -166,16 +166,16 @@ The integration of automatic speech recognition in a \textsc{cai} tool (see \cit
 \matrix (prandifig7) [matrix of nodes, nodes in empty cells,ampersand replacement=\&] {
 \&  \&  \&  \&  \& ~ \&  \&  \&  \&  \&  \&  \\  %\multicolumn{8}{c}{listening \\& comprehension}\\
 \&  \&  \&  \&  \& ~ \&  \&  \&  \&  \&  \&  \\  % \multicolumn{4}{c}{perceptual} \& \multicolumn{2}{c}{cognitive} \& \multicolumn{2}{c}{response}\\
-\&  \&  \& {vector} \& {$\emptyset$} \& {$\emptyset$} \& {$\emptyset$} \& {1} \& {$\emptyset$} \& {1} \& {$\emptyset$} \& \node [hea] (prandifig7-3-12) {$\emptyset$};\\
+\&  \&  \& {vector} \& {$\emptyset$} \& {$\emptyset$} \& {$\emptyset$} \& {1\vphantom{$\emptyset$}} \& {$\emptyset$} \& {1\vphantom{$\emptyset$}} \& {$\emptyset$} \& \node [hea] (prandifig7-3-12) {$\emptyset$};\\
 \&  \& \node[rsma]{demand}; \&  \& \node[hea]{visual\linebreak spatial}; \& \node[hea]{visual\linebreak verbal}; \& \node[hea]{auditory\linebreak spatial}; \& \node[hea] (prandifig7-4-8) {auditory\linebreak verbal}; \& \node[hea]{cognitive\linebreak spatial}; \& \node[hea] (prandifig7-4-10) {cognitive\linebreak verbal}; \& \node[hea]{response\linebreak spatial}; \& \node[hea] (prandifig7-4-12) {response\linebreak verbal}; \\
 \&  \& \node[rsma] (prandifig7-5-3) {$\emptyset$}; \& \node[rhea]{visual\linebreak spatial};    \& {0.8} \& {0.6} \& {0.6} \& {0.4} \& {0.7} \& {0.5} \& {0.4} \& 0.2\\
 \&  \& \node[rsma] (prandifig7-6-3) {$\emptyset$}; \& \node[rhea]{visual\linebreak verbal};     \& {0.6} \& {0.8} \& {0.4} \& {0.6} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
 \&  \& \node[rsma] (prandifig7-7-3) {$\emptyset$}; \& \node[rhea]{auditory\linebreak spatial};  \& {0.6} \& {0.4} \& {0.8} \& {0.4} \& {0.7} \& {0.5} \& {0.4} \& {0.2}\\
-\&  \& \node[rsma] (prandifig7-8-3) {1};           \& \node[rhea]{auditory\linebreak verbal};   \& {0.4} \& {0.6} \& {0.4} \& {0.8} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
+\&  \& \node[rsma] (prandifig7-8-3) {1\vphantom{$\emptyset$}};           \& \node[rhea]{auditory\linebreak verbal};   \& {0.4} \& {0.6} \& {0.4} \& {0.8} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
 \&  \& \node[rsma] (prandifig7-9-3) {$\emptyset$}; \& \node[rhea]{cognitive\linebreak spatial}; \& {0.7} \& {0.5} \& {0.7} \& {0.5} \& {0.8} \& {0.6} \& {0.6} \& {0.4}\\
-\&  \& \node[rsma] (prandifig7-10-3) {1};           \& \node[rhea]{cognitive\linebreak verbal};  \& {0.5} \& {0.7} \& {0.5} \& {0.7} \& {0.6} \& {0.8} \& {0.4} \& {0.6}\\
+\&  \& \node[rsma] (prandifig7-10-3) {1\vphantom{$\emptyset$}};           \& \node[rhea]{cognitive\linebreak verbal};  \& {0.5} \& {0.7} \& {0.5} \& {0.7} \& {0.6} \& {0.8} \& {0.4} \& {0.6}\\
 \&  \& \node[rsma] (prandifig7-11-3) {$\emptyset$}; \& \node[rhea]{response\linebreak spatial};  \& {0.4} \& {0.2} \& {0.4} \& {0.2} \& {0.6} \& {0.4} \& {0.8} \& {0.6}\\
-\&  \& \node[rhea] (prandifig7-12-3) {1};           \& \node[rhea] (prandifig7-12-4) {response\linebreak verbal};   \& {0.2} \& {0.4} \& {0.2} \& {0.4} \& {0.4} \& {0.6} \& {0.6} \& {1.0}\\
+\&  \& \node[rhea] (prandifig7-12-3) {1\vphantom{$\emptyset$}};           \& \node[rhea] (prandifig7-12-4) {response\linebreak verbal};   \& {0.2} \& {0.4} \& {0.2} \& {0.4} \& {0.4} \& {0.6} \& {0.6} \& {1.0}\\
 };
 \node [fit=(prandifig7-1-5)(prandifig7-1-12)] {listening \& comprehension};
 \node [fit=(prandifig7-2-5)(prandifig7-2-8)] {perceptual};
@@ -187,7 +187,7 @@ The integration of automatic speech recognition in a \textsc{cai} tool (see \cit
 \node [overlay,rotate=90,fit=(prandifig7-5-1)(prandifig7-12-1),text width=8cm,inner sep=0pt] {production \& monitoring};
 \begin{scope}[on background layer]
 \foreach \i in {5,6,8,10,11,12} \node [fit=(prandifig7-\i-3)(prandifig7-\i-12), fill=black!12,minimum height=1.4cm,yshift=-.5ex,inner ysep=0pt] {};
-\foreach \j in {8,10} \node [fit=(prandifig7-4-\j)(prandifig7-12-\j), fill=black!12,minimum width=1.26cm,inner xsep=0pt] {};
+\foreach \j in {8,10} \node [fit=(prandifig7-3-\j)(prandifig7-12-\j), fill=black!12,minimum width=1.26cm,inner xsep=0pt] {};
 \foreach \x in {5,6,8,10,11,12} {
     \foreach \y in {8,10} \node [fit=(prandifig7-\x-\y), fill=black!50,minimum width=1.5cm,minimum height=1.4cm,yshift=-.75ex] {};
     }
@@ -222,16 +222,16 @@ The integration of automatic speech recognition in a \textsc{cai} tool (see \cit
 \matrix (prandifig6) [matrix of nodes, nodes in empty cells,ampersand replacement=\&] {
 \&  \&  \&  \&  \& ~ \&  \&  \&  \&  \&  \&  \\  %\multicolumn{8}{c}{listening \\& comprehension}\\
 \&  \&  \&  \&  \& ~ \&  \&  \&  \&  \&  \&  \\  % \multicolumn{4}{c}{perceptual} \& \multicolumn{2}{c}{cognitive} \& \multicolumn{2}{c}{response}\\
-\&  \&  \& {vector} \& {$\emptyset$} \& {$\emptyset$} \& {$\emptyset$} \& {1} \& {$\emptyset$} \& {1} \& {$\emptyset$} \& {$\emptyset$}\\
+\&  \&  \& {vector} \& {$\emptyset$} \& {$\emptyset$} \& {$\emptyset$} \& {1\vphantom{$\emptyset$}} \& {$\emptyset$} \& {1\vphantom{$\emptyset$}} \& {$\emptyset$} \& {$\emptyset$}\\
 \&  \& \node[rsma]{demand}; \&  \& \node[hea]{visual\linebreak spatial}; \& \node[hea]{visual\linebreak verbal}; \& \node[hea]{auditory\linebreak spatial}; \& \node[hea] (prandifig6-4-8) {auditory\linebreak verbal}; \& \node[hea]{cognitive\linebreak spatial}; \& \node[hea] (prandifig6-4-10) {cognitive\linebreak verbal}; \& \node[hea]{response\linebreak spatial}; \& \node[hea] (prandifig6-4-12) {response\linebreak verbal}; \\
 \&  \& \node[rsma] (prandifig6-5-3) {$\emptyset$}; \& \node[rhea]{visual\linebreak spatial};                       \& {0.8} \& {0.6} \& {0.6} \& {0.4} \& {0.7} \& {0.5} \& {0.4} \& {0.2}\\
 \&  \& \node[rsma] (prandifig6-6-3) {$\emptyset$}; \& \node[rhea]{visual\linebreak verbal};                        \& {0.6} \& {0.8} \& {0.4} \& {0.6} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
 \&  \& \node[rsma] (prandifig6-7-3) {$\emptyset$}; \& \node[rhea]{auditory\linebreak spatial};                     \& {0.6} \& {0.4} \& {0.8} \& {0.4} \& {0.7} \& {0.5} \& {0.4} \& {0.2}\\
-\&  \& \node[rsma] (prandifig6-8-3) {1};           \& \node[rhea]{auditory\linebreak verbal};    \& {0.4} \& {0.6} \& {0.4} \& {0.8} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
+\&  \& \node[rsma] (prandifig6-8-3) {\vphantom{$\emptyset$}1};           \& \node[rhea]{auditory\linebreak verbal};    \& {0.4} \& {0.6} \& {0.4} \& {0.8} \& {0.5} \& {0.7} \& {0.2} \& {0.4}\\
 \&  \& \node[rsma] (prandifig6-9-3) {$\emptyset$}; \& \node[rhea]{cognitive\linebreak spatial};                    \& {0.7} \& {0.5} \& {0.7} \& {0.5} \& {0.8} \& {0.6} \& {0.6} \& {0.4}\\
-\&  \& \node[rsma] (prandifig6-10-3) {1};           \& \node[rhea]{cognitive\linebreak verbal};  \& {0.5} \& {0.7} \& {0.5} \& {0.7} \& {0.6} \& {0.8} \& {0.4} \& {0.6}\\
+\&  \& \node[rsma] (prandifig6-10-3) {\vphantom{$\emptyset$}1};           \& \node[rhea]{cognitive\linebreak verbal};  \& {0.5} \& {0.7} \& {0.5} \& {0.7} \& {0.6} \& {0.8} \& {0.4} \& {0.6}\\
 \&  \& \node[rsma] (prandifig6-11-3) {$\emptyset$}; \& \node[rhea]{response\linebreak spatial};                     \& {0.4} \& {0.2} \& {0.4} \& {0.2} \& {0.6} \& {0.4} \& {0.8} \& {0.6}\\
-\&  \& \node[rsma] (prandifig6-12-3) {1};           \& \node[rhea] (prandifig6-12-4) {response\linebreak verbal};   \& {0.2} \& {0.4} \& {0.2} \& {0.4} \& {0.4} \& {0.6} \& {0.6} \& {1.0}\\
+\&  \& \node[rsma] (prandifig6-12-3) {1\vphantom{$\emptyset$}};           \& \node[rhea] (prandifig6-12-4) {response\linebreak verbal};   \& {0.2} \& {0.4} \& {0.2} \& {0.4} \& {0.4} \& {0.6} \& {0.6} \& {1.0}\\
 };
 \node [fit=(prandifig6-1-5)(prandifig6-1-12)] {listening \& comprehension};
 \node [fit=(prandifig6-2-5)(prandifig6-2-8)] {perceptual};
@@ -242,9 +242,11 @@ The integration of automatic speech recognition in a \textsc{cai} tool (see \cit
 \node [overlay,fit=(prandifig6-11-2)(prandifig6-12-2),rotate=90,text width=2.66cm,inner sep=0pt] {responose};
 \node [overlay,rotate=90,fit=(prandifig6-5-1)(prandifig6-12-1),text width=8cm,inner sep=0pt] {production \& monitoring};
 \begin{scope}[on background layer]
-\foreach \i in {8,10,12} \node [fit=(prandifig6-\i-3)(prandifig6-\i-12), fill=black!12,minimum height=1.4cm,yshift=-.5ex] {};
-\foreach \j in {8,10} \node [fit=(prandifig6-4-\j)(prandifig6-12-\j), fill=black!12,minimum width=1.26cm,inner xsep=0pt] {};
-\foreach \x/\y in {8/8,8/10,10/8,10/10,12/8,12/10} \node [fit=(prandifig6-\x-\y), fill=black!50,minimum width=1.5cm,minimum height=1.4cm,yshift=-.75ex] {};
+\foreach \i in {5,6,8,10,11,12} \node [fit=(prandifig7-\i-3)(prandifig7-\i-12), fill=black!12,minimum height=1.4cm,yshift=-.5ex,inner ysep=0pt] {};
+\foreach \j in {8,10} \node [fit=(prandifig7-3-\j)(prandifig7-12-\j), fill=black!12,minimum width=1.26cm,inner xsep=0pt] {};
+\foreach \x in {5,6,8,10,11,12} {
+    \foreach \y in {8,10} \node [fit=(prandifig7-\x-\y), fill=black!50,minimum width=1.5cm,minimum height=1.4cm,yshift=-.75ex] {};
+    }
 \end{scope}
 \draw (prandifig6-4-12.south east) -| (prandifig6-12-4.south west);
 \draw (prandifig6-3-12.south east) -| (prandifig6-12-3.south west);
