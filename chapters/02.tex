@@ -89,7 +89,7 @@ The possibility to ``quantify'' the degree of interference between co-occurring 
 \&  \& \node[rsma] (prandifig3-9-3) {$\emptyset$}; \& \node[rhea]{cognitive\linebreak spatial};                    \& {0.7} \& {0.5} \& {0.7} \& {0.5} \& {0.8} \& {0.6} \& {0.6} \& {0.4}\\
 \&  \& \node[rsma] (prandifig3-10-3) {1\vphantom{$\emptyset$}};           \& \node[rhea]{cognitive\linebreak verbal};  \& {0.5} \& {0.7} \& {0.5} \& {0.7} \& {0.6} \& {0.8} \& {0.4} \& {0.6}\\
 \&  \& \node[rsma] (prandifig3-11-3) {$\emptyset$}; \& \node[rhea]{response\linebreak spatial};                     \& {0.4} \& {0.2} \& {0.4} \& {0.2} \& {0.6} \& {0.4} \& {0.8} \& {0.6}\\
-\&  \& \node[rsma] (prandifig3-12-3) {1\vphantom{$\emptyset$}};           \& \node[rhea] (prandifig3-12-4) {response\linebreak verbal};   \& {0.2} \& {0.4} \& {0.2} \& {0.4} \& {0.4} \& {0.6} \& {0.6} \& {1.0}\\
+\&  \& \node[rsma] (prandifig3-12-3) {1\vphantom{$\emptyset$}}; \& \node[rhea] (prandifig3-12-4) {response\linebreak verbal};   \& {0.2} \& {0.4} \& {0.2} \& {0.4} \& {0.4} \& {0.6} \& {0.6} \& {1.0}\\
 };
 \node [fit=(prandifig3-1-5)(prandifig3-1-12)] {listening \& comprehension};
 \node [fit=(prandifig3-2-5)(prandifig3-2-8)] {perceptual};
@@ -100,18 +100,18 @@ The possibility to ``quantify'' the degree of interference between co-occurring 
 \node [overlay,fit=(prandifig3-11-2)(prandifig3-12-2),rotate=90,text width=2.66cm,inner sep=0pt] {responose};
 \node [overlay,rotate=90,fit=(prandifig3-5-1)(prandifig3-12-1),text width=8cm,inner sep=0pt] {production \& monitoring};
 \begin{scope}[on background layer]
-\foreach \i in {8,10,12} \node [fit=(prandifig3-\i-3)(prandifig3-\i-12), fill=black!12,minimum height=1.4cm,yshift=-.5ex] {};
-\foreach \j in {8,10} \node [fit=(prandifig3-3-\j)(prandifig3-12-\j), fill=black!12,minimum width=1.26cm,inner xsep=0pt] {};
-\foreach \x/\y in {8/8,8/10,10/8,10/10,12/8,12/10} \node [fit=(prandifig3-\x-\y), fill=black!50,minimum width=1.5cm,minimum height=1.4cm,yshift=-.75ex] {};
+\foreach \i in {8,10,12} \node [fit=(prandifig3-\i-3)(prandifig3-\i-12), fill=black!12,minimum height=1.33cm,yshift=-.5ex] {};
+\foreach \j in {8,10} \node [fit=(prandifig3-3-\j)(prandifig3-12-\j), fill=black!12,minimum width=1.33cm,inner xsep=0pt] {};
+\foreach \x/\y in {8/8,8/10,10/8,10/10,12/8,12/10} \node [fit=(prandifig3-\x-\y), fill=black!50,minimum width=1.33cm,minimum height=1.33cm,yshift=-.75ex] {};
 \end{scope}
 \draw (prandifig3-4-12.south east) -| (prandifig3-12-4.south west);
-\draw (prandifig3-3-12.south east) -| (prandifig3-12-3.south west);
-\draw (prandifig3-3-11.north west) -- (prandifig3-3-12.north east);
-\draw (prandifig3-3-9.north west) -- (prandifig3-3-10.north east);
-\draw (prandifig3-3-5.north west) -- (prandifig3-3-8.north east);
-\draw (prandifig3-11-3.north east) -- (prandifig3-12-3.north west);
-\draw (prandifig3-9-3.north east) -- (prandifig3-10-3.north west);
-\draw (prandifig3-5-3.north east) -- (prandifig3-8-3.north west);
+\draw (prandifig3-4-12.north east) -| (prandifig3-12-4.north west);
+\node (temp32113212) [overlay,fit=(prandifig3-2-11.south west)(prandifig3-2-12.south east),inner ysep=5pt] {}; \draw (temp32113212.north west) -- (temp32113212.north east);
+\node (temp3393310) [overlay,fit=(prandifig3-3-9.north west)(prandifig3-3-10.north east),inner ysep=5pt] {};\draw (temp3393310.north west) -- (temp3393310.north east);
+\node (temp335338) [overlay,fit=(prandifig3-3-5.north west)(prandifig3-3-8.north east),inner ysep=5pt] {};\draw (temp335338.north west) -- (temp335338.north east);
+\node (temp31133123) [overlay,fit=(prandifig3-11-3.north east)(prandifig3-12-3),inner xsep=5pt] {};\draw (temp31133123.north west) -- (temp31133123.south west);
+\node (temp3933103) [overlay,fit=(prandifig3-9-3.north east)(prandifig3-10-3),inner xsep=5pt] {};\draw (temp3933103.north west) -- (temp3933103.south west);
+\node (temp353383) [overlay,fit=(prandifig3-5-3.north east)(prandifig3-8-3),inner xsep=5pt] {};\draw (temp353383.north west) -- (temp353383.south west);
 \end{tikzpicture}
 }
 \begin{center}\scriptsize
@@ -175,7 +175,7 @@ The integration of automatic speech recognition in a \textsc{cai} tool (see \cit
 \&  \& \node[rsma] (prandifig7-9-3) {$\emptyset$}; \& \node[rhea]{cognitive\linebreak spatial}; \& {0.7} \& {0.5} \& {0.7} \& {0.5} \& {0.8} \& {0.6} \& {0.6} \& {0.4}\\
 \&  \& \node[rsma] (prandifig7-10-3) {1\vphantom{$\emptyset$}};           \& \node[rhea]{cognitive\linebreak verbal};  \& {0.5} \& {0.7} \& {0.5} \& {0.7} \& {0.6} \& {0.8} \& {0.4} \& {0.6}\\
 \&  \& \node[rsma] (prandifig7-11-3) {$\emptyset$}; \& \node[rhea]{response\linebreak spatial};  \& {0.4} \& {0.2} \& {0.4} \& {0.2} \& {0.6} \& {0.4} \& {0.8} \& {0.6}\\
-\&  \& \node[rhea] (prandifig7-12-3) {1\vphantom{$\emptyset$}};           \& \node[rhea] (prandifig7-12-4) {response\linebreak verbal};   \& {0.2} \& {0.4} \& {0.2} \& {0.4} \& {0.4} \& {0.6} \& {0.6} \& {1.0}\\
+\&  \& \node[rhea] (prandifig7-12-3) {1\vphantom{$\emptyset$}}; \& \node[rhea] (prandifig7-12-4) {response\linebreak verbal};   \& {0.2} \& {0.4} \& {0.2} \& {0.4} \& {0.4} \& {0.6} \& {0.6} \& {1.0}\\
 };
 \node [fit=(prandifig7-1-5)(prandifig7-1-12)] {listening \& comprehension};
 \node [fit=(prandifig7-2-5)(prandifig7-2-8)] {perceptual};
@@ -186,23 +186,21 @@ The integration of automatic speech recognition in a \textsc{cai} tool (see \cit
 \node [overlay,fit=(prandifig7-11-2)(prandifig7-12-2),rotate=90,text width=2.66cm,inner sep=0pt] {responose};
 \node [overlay,rotate=90,fit=(prandifig7-5-1)(prandifig7-12-1),text width=8cm,inner sep=0pt] {production \& monitoring};
 \begin{scope}[on background layer]
-\foreach \i in {5,6,8,10,11,12} \node [fit=(prandifig7-\i-3)(prandifig7-\i-12), fill=black!12,minimum height=1.4cm,yshift=-.5ex,inner ysep=0pt] {};
-\foreach \j in {8,10} \node [fit=(prandifig7-3-\j)(prandifig7-12-\j), fill=black!12,minimum width=1.26cm,inner xsep=0pt] {};
-\foreach \x in {5,6,8,10,11,12} {
-    \foreach \y in {8,10} \node [fit=(prandifig7-\x-\y), fill=black!50,minimum width=1.5cm,minimum height=1.4cm,yshift=-.75ex] {};
-    }
+\foreach \i in {5,6,8,10,11,12} \node [fit=(prandifig7-\i-3)(prandifig7-\i-12),fill=black!12,minimum height=1.33cm,yshift=-.5ex] {};
+\foreach \j in {8,10} \node [fit=(prandifig7-3-\j)(prandifig7-12-\j), fill=black!12,minimum width=1.33cm,inner xsep=0pt] {};
+\foreach \x/\y in {5/8,5/10,6/8,6/10,8/8,8/10,10/8,10/10,11/8,11/10,12/8,12/10} {\node [fit=(prandifig7-\x-\y), fill=black!50,minimum width=1.33cm,minimum height=1.33cm,yshift=-.75ex] {};}
 \end{scope}
 \draw (prandifig7-4-12.south east) -| (prandifig7-12-4.south west);
-\draw (prandifig7-3-12.south east) -| (prandifig7-12-3.south west);
-\draw (prandifig7-3-11.north west) -- (prandifig7-3-12.north east);
-\draw (prandifig7-3-9.north west) -- (prandifig7-3-10.north east);
-\draw (prandifig7-3-5.north west) -- (prandifig7-3-8.north east);
-\draw (prandifig7-11-3.north east) -- (prandifig7-12-3.north west);
-\draw (prandifig7-9-3.north east) -- (prandifig7-10-3.north west);
-\draw (prandifig7-5-3.north east) -- (prandifig7-8-3.north west);
+\draw (prandifig7-4-12.north east) -| (prandifig7-12-4.north west);
+\node (temp32113212) [overlay,fit=(prandifig7-2-11.south west)(prandifig7-2-12.south east),inner ysep=5pt] {}; \draw (temp32113212.north west) -- (temp32113212.north east);
+\node (temp3393310) [overlay,fit=(prandifig7-3-9.north west)(prandifig7-3-10.north east),inner ysep=5pt] {};\draw (temp3393310.north west) -- (temp3393310.north east);
+\node (temp335338) [overlay,fit=(prandifig7-3-5.north west)(prandifig7-3-8.north east),inner ysep=5pt] {};\draw (temp335338.north west) -- (temp335338.north east);
+\node (temp31133123) [overlay,fit=(prandifig7-11-3.north east)(prandifig7-12-3),inner xsep=5pt] {};\draw (temp31133123.north west) -- (temp31133123.south west);
+\node (temp3933103) [overlay,fit=(prandifig7-9-3.north east)(prandifig7-10-3),inner xsep=5pt] {};\draw (temp3933103.north west) -- (temp3933103.south west);
+\node (temp353383) [overlay,fit=(prandifig7-5-3.north east)(prandifig7-8-3),inner xsep=5pt] {};\draw (temp353383.north west) -- (temp353383.south west);
 \end{tikzpicture}}
 \caption{Conflict matrix for \textsc{si} with spreadsheet (Excel) TIC = 16.8\label{fig:prandi:7}
-% \todo[inline]{Todo for LangSci: Spacing between rows and columns, better rules!}
+\todo[inline]{Todo for LangSci: Spacing between rows and columns!}
 }
 \end{figure}
 
@@ -242,23 +240,23 @@ The integration of automatic speech recognition in a \textsc{cai} tool (see \cit
 \node [overlay,fit=(prandifig6-11-2)(prandifig6-12-2),rotate=90,text width=2.66cm,inner sep=0pt] {responose};
 \node [overlay,rotate=90,fit=(prandifig6-5-1)(prandifig6-12-1),text width=8cm,inner sep=0pt] {production \& monitoring};
 \begin{scope}[on background layer]
-\foreach \i in {5,6,8,10,11,12} \node [fit=(prandifig7-\i-3)(prandifig7-\i-12), fill=black!12,minimum height=1.4cm,yshift=-.5ex,inner ysep=0pt] {};
-\foreach \j in {8,10} \node [fit=(prandifig7-3-\j)(prandifig7-12-\j), fill=black!12,minimum width=1.26cm,inner xsep=0pt] {};
+\foreach \i in {5,6,8,10,11,12} \node [fit=(prandifig7-\i-3)(prandifig7-\i-12), fill=black!12,minimum height=1.33cm,yshift=-.5ex,inner ysep=0pt] {};
+\foreach \j in {8,10} \node [fit=(prandifig7-3-\j)(prandifig7-12-\j), fill=black!12,minimum width=1.33cm,inner xsep=0pt] {};
 \foreach \x in {5,6,8,10,11,12} {
-    \foreach \y in {8,10} \node [fit=(prandifig7-\x-\y), fill=black!50,minimum width=1.5cm,minimum height=1.4cm,yshift=-.75ex] {};
+    \foreach \y in {8,10} \node [fit=(prandifig7-\x-\y), fill=black!50,minimum width=1.33cm,minimum height=1.33cm,yshift=-.75ex] {};
     }
 \end{scope}
 \draw (prandifig6-4-12.south east) -| (prandifig6-12-4.south west);
-\draw (prandifig6-3-12.south east) -| (prandifig6-12-3.south west);
-\draw (prandifig6-3-11.north west) -- (prandifig6-3-12.north east);
-\draw (prandifig6-3-9.north west) -- (prandifig6-3-10.north east);
-\draw (prandifig6-3-5.north west) -- (prandifig6-3-8.north east);
-\draw (prandifig6-11-3.north east) -- (prandifig6-12-3.north west);
-\draw (prandifig6-9-3.north east) -- (prandifig6-10-3.north west);
-\draw (prandifig6-5-3.north east) -- (prandifig6-8-3.north west);
+\draw (prandifig6-4-12.north east) -| (prandifig6-12-4.north west);
+\node (temp32113212) [overlay,fit=(prandifig6-2-11.south west)(prandifig6-2-12.south east),inner ysep=5pt] {}; \draw (temp32113212.north west) -- (temp32113212.north east);
+\node (temp3393310) [overlay,fit=(prandifig6-3-9.north west)(prandifig6-3-10.north east),inner ysep=5pt] {};\draw (temp3393310.north west) -- (temp3393310.north east);
+\node (temp335338) [overlay,fit=(prandifig6-3-5.north west)(prandifig6-3-8.north east),inner ysep=5pt] {};\draw (temp335338.north west) -- (temp335338.north east);
+\node (temp31133123) [overlay,fit=(prandifig6-11-3.north east)(prandifig6-12-3),inner xsep=5pt] {};\draw (temp31133123.north west) -- (temp31133123.south west);
+\node (temp3933103) [overlay,fit=(prandifig6-9-3.north east)(prandifig6-10-3),inner xsep=5pt] {};\draw (temp3933103.north west) -- (temp3933103.south west);
+\node (temp353383) [overlay,fit=(prandifig6-5-3.north east)(prandifig6-8-3),inner xsep=5pt] {};\draw (temp353383.north west) -- (temp353383.south west);
 \end{tikzpicture}}
 \caption{Conflict matrix for \textsc{si} with \textsc{cai} (InterpretBank) TIC = 14.8\label{fig:prandi:6}
-% \todo[inline]{ToDo for Langsci: Spacing between rows and columns, better rules!}
+\todo[inline]{ToDo for Langsci: Spacing between rows and columns!}
 }
 \end{figure}
 
