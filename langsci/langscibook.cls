@@ -53,7 +53,7 @@
 %   \_ Miscellaneous
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{langscibook}[2018/01/15 Language Science Press]
+\ProvidesClass{langsci/langscibook}[2018/01/15 Language Science Press]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
