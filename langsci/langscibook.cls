@@ -1818,6 +1818,7 @@ width=.8\textwidth
 	pdfusetitle=true,  % puts author and title in automatically, maybe only in final mode?
 	pdfkeywords={},
 	pdfpagelayout=TwoPageRight,   % first page is separate
+	hypertexnames=false, % generates a random name for the link to a section/chapter. It is required by the paperappendix env.
 	%ps2pdf=true
 	]{hyperref}
 
