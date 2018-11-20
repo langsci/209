@@ -8,18 +8,7 @@
 %%   Licence: 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% For project 209, the following env is positioned at a temp location. 
-% Installing a new version of the class will not interfere.
 
-\newenvironment{paperappendix}{%
-    \let\oldthesection\thesection%
-    \let\oldsectionformat\sectionformat%
-    \setcounter{section}{0}%
-    \def\thesection{\Alph{section}}%
-    \def\sectionformat{\appendixname\ \thesection:\enskip}%
-    }{%
-    \let\thesection\oldthesection%
-    \let\sectionformat\oldsectionformat}
 
 % Heiko Oberdiek
 % http://tex.stackexchange.com/questions/136644/vertical-space-in-interaction-with-figure-center-environment
@@ -284,8 +273,6 @@
 \newcommand{\threedigitexamples}{\exewidth{(234)}}
 \newcommand{\fourdigitexamples}{\exewidth{(2345)}}
 
-\newcommand{\noabstract}{\vspace*{-2\baselineskip}} %for chapters without abstract
-
 \newcommand{\rephrase}[2]{{\color{yellow!30!black}#2}\todo{replaced `#1'}}
 
 \newcommand{\missref}[2][]{\todo[#1]{missing reference #2}}
@@ -347,13 +334,34 @@
     }%
 } 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Extras for use in (some) edited volumes             %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% for chapters without abstract
+\newcommand{\noabstract}{\vspace*{-2\baselineskip}} 
+
+% for papers that have appendices, a replacement for \appendix.
+% Usage: \begin{paperappendix} \section{Title} ... \end{paperappendix
+%        Will result in "Appendix A: Title"
+%
+\newenvironment{paperappendix}{%
+    \let\oldthesection\thesection%
+    \let\oldsectionformat\sectionformat%
+    \setcounter{section}{0}%
+    \def\thesection{\Alph{section}}%
+    \def\sectionformat{\appendixname\ \thesection:\enskip}%
+    }{%
+    \let\thesection\oldthesection%
+    \let\sectionformat\oldsectionformat}
   
 %%%%%%%%%%%%%%%%%%%%
 %%%%           %%%%%
 %%%%   PLOTS   %%%%%
 %%%%           %%%%%
 %%%%%%%%%%%%%%%%%%%%
-
+ 
 % \newcommand{\barplot}[4]{%
 %   \begin{tikzpicture}
 %     \begin{axis}[
@@ -394,3 +402,5 @@
 %             \end{axis}    
 %         \end{tikzpicture}
 % }
+
+\newcommand{\LSfrac}[1]{{\addfontfeature{Fractions=On}#1}}% Use the fraction glyphs shipped with Libertine. The argument is n/m, where n and m are integers

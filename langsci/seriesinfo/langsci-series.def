@@ -21,6 +21,7 @@
 \newcommand{\ogs}{ogs}		%Open Generative Syntax
 \newcommand{\osl}{osl}		%Open Slavic Linguistics
 \newcommand{\pmwe}{pmwe}		%Phraseology and Multi-Word Expressions
+\newcommand{\scl}{scl}
 \newcommand{\sidl}{sidl}
 \newcommand{\silp}{silp}	%Studies in Laboratory Phonology
 \newcommand{\tbls}{tbls}	%Textbooks in Language Sciences
@@ -68,6 +69,7 @@
 \ifx\lsSeries\eurosla
 	\newcommand{\lsSeriesTitle}{Eurosla Studies~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsMidOrange}
+	\renewcommand{\lsISSN}{2626-2665}	
 \fi
 \ifx\lsSeries\hpls
 	\newcommand{\lsSeriesTitle}{History and Philosophy of the Language Sciences~\lsSeriesNumber}
