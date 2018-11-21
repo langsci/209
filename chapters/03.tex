@@ -234,7 +234,7 @@ As hypothesis testing was used to analyze the quantitative data obtained from th
 \begin{figure}
 	%%please move the includegraphics inside the {figure} environment
 	%%\includegraphics[width=\textwidth]{Ch3-img1.wmf}
-\begin{tikzpicture}\small
+\begin{tikzpicture}\small\selectcolormodel{gray}
 \begin{axis}  [xtick={data},
                xticklabels={pre,post},
                ylabel={abs error},
@@ -242,9 +242,9 @@ As hypothesis testing was used to analyze the quantitative data obtained from th
                xlabel={time},
                height=6cm,
                width=6cm
-              ]
+                ]
     \addplot+ [error bars/.cd,
-               y dir=both,y explicit,
+               y dir=both,y explicit
               ] coordinates {(1,1.4) +-(1.0000,1.0000) 
                              (2,0.6) +-(1.0000,1.0000)};
 \end{axis}
