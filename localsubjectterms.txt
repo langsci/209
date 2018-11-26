@@ -1,314 +1,50 @@
 interpreter
-vci
-lsLightGray
-booth
-cai
 glossary
-cait
-prandi
 InterpretBank
 rendition
-Interpreting
 terminological
-devaux
 defendant
-subbibliography
-deysel
-Seeber
-dpsi
 videoconference
-Wickens
-ict
-Pinochi2009
 Avidicus
-interpret
-notkeyword
-Sandrelli2007a
-Gile
 courtroom
 court
-Mazza2001
 multilingual
-Word
-asr
-zenodo
 trigram
-Effort
-Mouzourakis2006
-MainzGermersheim
-Gile1995
-Fantinuoli2018
-Braun1996
-ziegler
-omission
-iso
-audible
 paraphrase
 terminology
-vr
-UNESCO1987
-Pinazo2008
-Mead2015
-Lee2005
-Gile2009
-conference
-Interpreters
-Seldom
-audio
-Xp
 monolingual
-Always
-Box
 idiomatic
-speaker
 unigram
-Frequently
-Cognitive
-Never
-rapport
-nrpsi
-aiic
-Wickens2002
-Seeber2011a
-Sandrelli2007b
-Roziner2010
-Prandi2015b
-Prandi2015a
-Kurz2000
 ISO20108
-Fantinuoli2017b
-Fantinuoli2017a
-Devaux2017b
-Braun2016b
-Braun2015
-Berber2010
-isiNdebele
-unesco
 Skype
-crf
-speech
 P13
 bigram
-ri
-workspace
-console
-isiZulu
 Parliament
-technological
-P12
-tab
 freelance
-Excel
-Load
-simultaneous
-si
-ime
-P10
-communicative
-impartial
-phrasing
-landline
-eighteen
 microphone
 Footprint
-ergonomic
-P9
-decimal
 authore
-scelerisque
-prefaceEd
-besnier_homme_2012
-Will2015
-Wadensjö1998
-Timarova2012
-Thaxton1993
-Setton1999
-Seeber2015
-Sandrelli2015
-Rombouts2011
-Riccardi2002
-Prandi2017b
-Prandi2017a
-Prandi2016
-Plotnikoff2000
-Melissi
-Martin2008
-Lim2014
-Kantowitz1976
-Hodges2008
-Gile1999
-Fowler2013
-Fowler2012
-Fowler2007
-Europarl2001
-Chernov2004
-Causo2011
-Braun2016a
-Braun2011a
-Barik1971
-Andres2009
-isdn
-Extron
-SiSwati
-Sepedi
-Tshivenda
-Videoconference
-Experimenting
-Buds
-Interpretations
-notepad
-Sesotho
 intonation
-Honours
-Q14
 audibility
-P15
-Mazza
-remotely
 soundproof
-trainer
-listen
-hearing
-profession
-biographical
-P14
-Indicate
-trainee
 Black
-remote
-Afrikaans
-favorite
-mi
-teleconference
-macro
-P17
-ev
-heading
-sentence
-Q7
-accent
-Q6
 listening
-hd
-practise
-query
-upcoming
-seating
-Diploma
-breakthrough
-remoteness
 respondent
-Buenos
-ar
-Presence
-hall
-Do
-Aires
-unfinished
-Q5
-immersive
-easier
-pertain
 hesitation
-impersonal
-usability
-ibidem
-Fraunhofer
-exploratory
 equipment
-fig
-Accuracy
-qn
-weakness
-audience
-Ghent
-session
-monotonous
 telephony
 pause
-Pixel
 synchronisation
-Mainz
-Language
-clarification
-triangulate
-video
 spreadsheet
-quota
-lunch
-tire
-appropriateness
-alienation
-Wales
-witness
-Conflict
-zanettin_corpora_2002
-venenatis
-vehicula
-vanRotterdam2011
-ursula_huws_logged_2016
-ultricie
-torquent
-taciti
-spatialverbal
-sociosqu
-sectref
-ross_print_2017
-red50m
-pym_what_2011
-pppppppppppppppppppppppppppppp
-placerat
-participantsperceived
-odio
-nocite
-neufeind_work_2018
-muller_lecture_2016
-lsLightGrayINTERPRETING
-litora
-incepto
-himenaeo
-finn_what_2017
-evaluaonference
-euismod
-eenenzestig
-dapibus
-conubia
-consectetur
-citeauthor
-chang_conference_2018
-bibendum
-aptent
-ambientfocal
-adipiscing
-adaptedn
-ZieglerAIIC
-Yu2016
-Xu2015
-Will2009
-Wickens1984
-Wickens1976
-Vivamus
-Verdier2011
-VandierendonckUniversity
-Timarová
-TelecommunicationUnion2009
-Technical2016
-TechTarget2017
-Seleskovitch1975
-Seidman2006
-Seeber2007
-Sandrelli2002
 interpreting performance
 interaction management
 vci equipment
 technological support
 interpreter training
-use of vci equipment
 cognitive load
 glossary query
 target language
 terminology management
-source speech
 evaluation of interpreting performance
 terminological quality
 simultaneous interpretation
@@ -321,9 +57,7 @@ computer-assisted interpreter
 computer-assisted interpreter training
 interpreting process
 automatic speech
-exploratory study
 interpreting booth
-5em lslightgray
 role-space model
 remote party
 macro error
@@ -345,47 +79,17 @@ final self-assessment
 interpreting session
 cait software
 mock-up system
-interpreting task
-upcoming technological turn
-future workspace
-interpreting experience
 simultaneous mode
-satellite connection
 control setting
 demand vector
 video quality
 source text
-same room
-prior experience
-theoretical framework
-integrative cait
 videoconference communication
 remote simultaneous conference
-high interaction management
-traditional terminology management
-evaluating interpreting performance
 monolingual setting
-number syntax
-using vci
-a-priori classification
 remote interpretation
-favorite strategy
-number support
-automatic number
 virtual reality
-wireless microphone
-conference hall
-traditional terminology
-sight translation
 communicative event
-experimental group
-new theoretical framework
-different role
-technological breakthrough
-image input
-video feed
-home office
-target text
 cognitive overload
 information density
 delivery rate
@@ -394,37 +98,21 @@ matching method
 high interaction
 advanced search
 speech recognition
-search behavior
 augmented reality
-audio signal
 inter-subject variability
 high definition
-new device
 error reduction
-pilot study
-primary research
-different location
-interpreting activity
-evaluation study approach
 assessment of interpreting performance
 intelligent cait
 360-degree camera
-phrasing change
-booth colleague
-face-to-face court
-monolingual court
-multilingual court
-practising court
-training court
+court
 interpreting curriculum
 interpreting equipment
-using vci equipment
 micro error
 interpreting exercise
 picture-in-picture function
 electronic glossary
 self-assessment grid
-full hd
 interpreting hub
 impact of technological support
 integration of automatic speech
@@ -432,8 +120,6 @@ integration of automatic speech recognition
 proven interpretation
 student interpreter
 local cognitive load
-2cno lslightgray
-quota matching method
 complementary interpreting modality
 interpreting modality
 assessor post-experiment
@@ -446,155 +132,23 @@ precise rendition
 split role
 split role-space
 presence-based scenario
-traditional presence-based scenario
-total interference score
-50-inch screen
 glossary search
 terminology search
-average final self-assessment
-final self-assessment session
-hub solution
-ear-voice span
+final self-assessment
 perceptual-cognitive stage
-source stimulus
-limited technological support
-booth technology
-vci technology
-cait tool
-interpreter trainer
+stimulus
 automatic speech translation
-primary research aim
-expert assessor
-terminological information
 second interpreter
-remote participant
-self-assessment rating
-language combination
 terminological precision
 interpretation quality
-transmitting sound
-experimental pilot study
 lip synchronization
 human interpreter
-following macro
-reality scenario
 interpreting service
-speech translation
-high information density
 idiomatic language
-traditional experiment
-used strategy
-local network
-phd research project
-number type
-traditional equipment
-role perception
-fundamental phase
-other court
-experimental pilot
-look-up process
-resource theory
-response stage
-frequent error
-ceiling performance
-training software
-next occurrence
-big screen
-legal setting
-technical setup
-translation quality
-textual material
-optic fibre
 minimal latency
-experimental stimulus
 cultural acceptability
-audio transmission
-informal training
 interference score
-general capacity
-automatic translation
-same assessment
-natural language processing
-total interference
-biographical information
-quota sampling
 output quality
-direct view
-video material
-auditory task
-technical nature
-own voice
-permanent basis
-growing demand
-transcription analysis
-personal opinion
-development tool
-potential issue
-research methodology
-high information
-research gap
-own performance
-phd research
-professional identity
-cognitive effort
-research aim
-automatic recognition
-study approach
-ideal system
-such training
-different strategy
-remote location
-evaluation study
-research design
 open-ended question
-video transmission
-translation system
-ecological validity
-research area
-own set
-professional experience
-language processing
-working environment
-communication technology
-absolute error
-natural language
-internet connection
-language use
-taking part
-hypothesis testing
-mother tongue
-experimental setting
-technological innovation
-research study
-technological progress
-average accuracy
-clear separation
-same place
-research project
-experimental study
-second experiment
-absence of audible input
-absence of body language
-sem ac
-strong regional accent
-message accuracy
-terminology accuracy
+body language
 court actor
-visible court actor
-creating ad-hoc
-aptent taciti sociosqu ad
-sociosqu ad
-taciti sociosqu ad
-addition of technological support
-consectetur adipiscing
-responsible adoption
-advance of 125ms latency
-advanced search algorithm
-anaphoric ambiguity
-analysis of human language
-error type analysis
-product-based analysis
-product-oriented analysis
-miner angelelli2004
-future-oriented approach
-second controversial assumption

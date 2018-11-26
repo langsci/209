@@ -9,3 +9,6 @@ Italian
 Setswana
 Tshivenda
 Turkish
+isiNdebele
+isiXhosa
+isiZulu
