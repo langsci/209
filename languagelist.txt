@@ -1,0 +1,11 @@
+Afrikaans
+Arabic
+British
+English
+French
+German
+Holo
+Italian
+Setswana
+Tshivenda
+Turkish
