@@ -9,6 +9,15 @@
 %Commands from Conversion, to be deleted before publication
 \newcommand{\textstyleannotationreference}{}
 
+
+\pgfplotsset{% Change ybar style to behave like ybar stacked 
+/pgfplots/ybar legend/.style={
+/pgfplots/legend image code/.code={%
+\draw[##1,/tikz/.cd,bar width=3pt,yshift=-0.2em,bar shift=0pt]
+plot coordinates {(0cm,0.8em)};},
+}
+}
+
 \newcommand{\devauxcos}{%
 \draw[-{Triangle[]},gray] (xyz cs:x=-3) -- (0,0) -- (xyz cs:x=3);
 \draw[-{Triangle[]},gray] (xyz cs:y=-3) -- (0,0) -- (xyz cs:y=3);
