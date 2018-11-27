@@ -1,2 +1,19 @@
-languages to index
-oneperline
+Afrikaans
+Arabic
+British
+English
+French
+German
+Holo
+isiNdebele
+isiXhosa
+isiZulu
+Italian
+Sepedi
+Sesotho
+Setswana
+SiSwati
+Sign Language
+Tshivenda
+Turkish
+Xitsonga

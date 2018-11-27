@@ -35,8 +35,8 @@ main.snd: main.bbl
 	python3 fixindex.py
 	mv mainmod.adx main.adx
 	makeindex -o main.and main.adx
-# 	makeindex -o main.lnd main.ldx
-# 	makeindex -o main.snd main.sdx 
+	makeindex -o main.lnd main.ldx
+	makeindex -o main.snd main.sdx 
 	xelatex main 
  
 
@@ -131,7 +131,7 @@ chapterlist:
 
 
 barechapters:
-	cat *tex | detex > barechapters.txt
+	cat chapters/*tex | detex > barechapters.txt
 
 languagecandidates:
 	egrep -oh "[a-z] [A-Z][a-z]+" chapters/*tex| grep -o  [A-Z].* |sort -u >languagelist.txt

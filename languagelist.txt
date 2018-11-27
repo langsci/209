@@ -5,10 +5,15 @@ English
 French
 German
 Holo
-Italian
-Setswana
-Tshivenda
-Turkish
 isiNdebele
 isiXhosa
 isiZulu
+Italian
+Sepedi
+Sesotho
+Setswana
+SiSwati
+Sign Language
+Tshivenda
+Turkish
+Xitsonga

@@ -1776,7 +1776,7 @@ width=.8\textwidth
 	\iffieldundef{url}{}{ \url{\thefield{url}}\iffieldundef{urlday}{}{, accessed \thefield{urlyear}-\thefield{urlmonth}-\thefield{urlday}}.}
   \restorefield{note}{\lsnote}
   \iffieldundef{note}{}{\addspace{\thefield{note}\addperiod}}
-	\iffieldundef{doi}{}{ {\color{lsDOIGray}\doi{\thefield{doi}}}}
+	\iffieldundef{doi}{}{{\color{lsDOIGray}\doi{\thefield{doi}}}}
 }
 %\DeclareFieldFormat{doi}{{\color{lsGuidelinesGray}\doi{#1}}}
 \fi
@@ -1984,7 +1984,7 @@ width=.8\textwidth
   \includegraphics{\logopath langsci_spinelogo_nocolor.pdf}}%
   % \hspace{0.8em}%
   \hfill%
-  \parbox[b]{.87\textwidth}{\linespread{0.8}\lsChapterFooterSize\normalfont\lsCollectionPaperCitationText \includegraphics[height=.75em]{\logopath/ccby.eps}}}
+  \parbox[b]{.87\textwidth}{\linespread{0.8}\lsChapterFooterSize\normalfont\lsCollectionPaperCitationText\hbox{}\hfill{\href{https://creativecommons.org/licenses/by/4.0/}{\includegraphics[height=.75em]{\logopath/ccby.eps}}}}}
 \ifx\lsOutput\lsOutputPaper       % only if output==paper
 	\renewcommand{\lsCollectionPaperCitation}{Change with \string\papernote}
 \fi
