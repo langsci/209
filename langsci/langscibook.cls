@@ -1130,10 +1130,10 @@ This title can be downloaded at:\\
 \newcommand{\ccby}{CC-BY}
 \ifx\lsCopyright\ccby
 Published under the Creative Commons Attribution 4.0 Licence (CC BY 4.0):
-http://creativecommons.org/licenses/by/4.0/ \includegraphics[height=.75em]{\logopath/ccby.eps}
+\url{http://creativecommons.org/licenses/by/4.0/} \includegraphics[height=.75em]{\logopath/ccby.eps}
 \else
 Published under the Creative Commons Attribution-NoDerivatives 4.0 Licence (CC BY-ND 4.0):
-http://creativecommons.org/licenses/by-nd/4.0/ \includegraphics[height=.75em]{\logopath/ccbynd.eps}
+\url{http://creativecommons.org/licenses/by-nd/4.0/} \includegraphics[height=.75em]{\logopath/ccbynd.eps}
 \fi
 
 \begin{tabular}{@{}l@{~}l}
@@ -1759,7 +1759,6 @@ width=.8\textwidth
 	pdfusetitle=true,  % puts author and title in automatically, maybe only in final mode?
 	pdfkeywords={},
 	pdfpagelayout=TwoPageRight,   % first page is separate
-	hypertexnames=false, % better housekeeping of main.toc, required for paperappendix
 	%ps2pdf=true
 	]{hyperref}
 
