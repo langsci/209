@@ -3,13 +3,13 @@
 ## Publication Info
 
 - Editor: Claudio Fantinuoli
-- Publication Date: not yet published
+- Publication Date: December 2018
 - Series: Translation and Multilingual Natural Language Processing 
-- Volume: 
+- Volume: 11
 
 ## Description
 
-
+Unlike other professions, the impact of information and communication technology on interpreting has been moderate so far. However, recent advances in the areas of remote, computer-assisted, and, most recently, machine interpreting, are gaining the interest of both researchers and practitioners. This volume aims at exploring key issues, approaches and challenges to the interplay of interpreting and technology, an area that is still underrepresented in the field of Interpreting Studies. The contributions to this volume cover topics in the area of computer-assisted and remote interpreting, both in the conference as well as in the court setting, and report on experimental studies.
 
 ## URL
 
